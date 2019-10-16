@@ -1,0 +1,41 @@
+<footer>
+    <div class="footer">
+        <div>
+            <div class="row flex-column">
+                <a href="https://ubik.hr/" aria-label="UBIK" rel="noreferrer"><h4>Members of UBIK</h4></a>
+                <a href="https://www.meetup.com/BUIDL-Zagreb/" aria-label="BUIDL Meetup" rel="noreferrer">
+                    <h4>BUIDL meetup organizers</h4>
+                </a>
+            </div>
+        </div>
+
+        <div class="banners row">
+            <a href="https://topappdevelopmentcompanies.com/directory/app-developers/blockchain" target="_blank">
+                <img src="https://topappdevelopmentcompanies.com/badges/top-app-development-companies.png" alt="blockchain developers 2019" title="Blockchain Developers 2019"/>
+            </a>
+
+            <a target="_blank" href="https://www.goodfirms.co/company/nodefactory">
+                <img class="larger" src="https://goodfirms.s3.amazonaws.com/badges/color-badge/list-blockchain-technology-companies.svg" alt="GoodFirms Badge">
+            </a>
+        </div>
+
+        <div class="footer-cripto-payments">
+            <img alt="DAI" src="images/icons/dai.png">
+            <img alt="BTC" src="images/icons/btc.png">
+            <img alt="ETH" src="images/icons/eth.png">
+            <p>Crypto accepted</p>
+        </div>
+        <div class="footer-legal">
+
+            <p>Node Factory d.o.o. Oreškovićeva 6v, 10000 Zagreb. VAT ID: HR34703059147. Banka: Erste&Steiermärkische Bank d.d., IBAN: HR7624020061100867083, Swift: ESBCHR22
+                Tvrtka upisana pod brojem MBS 081152605 u Trgovačkom sudu u Zagrebu. Temeljni kapital od 20.000,00 kn uplaćen u cjelosti.
+                Članovi uprave društva su Belma Gutlić i Marin Petrunić.</p>
+        </div>
+
+    </div>
+</footer>
+
+{{ $script := .Site.Data.webpack.main }}
+{{ with $script.js }}
+    <script src="{{ relURL . }}"></script>
+{{ end }}

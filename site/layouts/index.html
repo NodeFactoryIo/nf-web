@@ -1,9 +1,12 @@
 {{ define "main" }}
-
-<h1>Hugo with Webpack, Sass, and PostCSS</h1>
-
-<h3>Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!</h3>
-
-<a href="{{ "/tech" | relURL }}">Check out the tech</a>
-
+    {{- partial "hero.html" . -}}
+    {{- partial "services.html" . -}}
+    {{- partial "approach.html" . -}}
+    {{- partial "projects.html" . -}}
+    {{- partial "clients.html" . -}}
+    {{- partial "testimonials.html" . -}}
+    {{- partial "blog.html" . -}}
+    {{- partial "team.html" . -}}
+    {{- partial "contact.html" . -}}
+    {{- partial "social.html" . -}}
 {{ end }}

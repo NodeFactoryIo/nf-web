@@ -1,55 +1,49 @@
-# Victor Hugo
+# NodeFactory landing page
 
-**A Hugo boilerplate for creating truly epic websites**
-
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
-
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
-
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+Done using [Hugo](https://gohugo.io/).
 
 ## Usage
 
-### :exclamation: Prerequisites
+### Prerequisites
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [yarn](https://yarnpkg.com) versions installed in order to use repo.
 
 Next step, clone this repository and run:
 
 ```bash
-npm install
+yarn install
 ```
 
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
+This will take some time and will install all necessary packages.
 
-### :construction_worker: Development
+### Development
 
 While developing your website, use:
 
 ```bash
-npm start
+yarn start
 ```
 
 or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
 
 ```bash
-npm run preview
+yarn preview
 ```
 
 Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
 
-### :package: Static build
+### Static build
 
 To build a static version of the website inside the `/dist` folder, run:
 
 ```bash
-npm run build
+yarn build
 ```
 
 To get a preview of posts or articles not yet published, run:
 
 ```bash
-npm run build:preview
+yarn build:preview
 ```
 
 See [package.json](package.json#L8) for all tasks.

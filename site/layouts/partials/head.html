@@ -1,0 +1,67 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
+    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+
+    <title>NodeFactory - Blockchain development company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Node Factory is a blockchain development agency that helps companies evolve using blockchain technologies.">
+
+    {{ "<!-- Open Graph data / Facebook Card data -->" | safeHTML }}
+    <meta property="og:title" content="NodeFactory - Blockchain research and development company">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nodefactory.io">
+    <meta property="og:image" content="https://www.nodefactory.io/images/NodeFactory_logo.png">
+    <meta property="og:image:alt" content="NodeFactory logo">
+    <meta property="og:description" content="Turning ideas into reliable products.">
+
+    {{ "<!-- Twitter Card data -->" | safeHTML }}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@nodefactoryio">
+
+    {{ "<!-- Mobile header color for Chrome, Firefox OS and Opera -->" | safeHTML }}
+    <meta name="theme-color" content="#2c638f">
+    {{ "<!-- Mobile header color Windows Phone -->" | safeHTML }}
+    <meta name="msapplication-navbutton-color" content="#2c638f">
+    {{ "<!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->" | safeHTML }}
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    {{ "<!--Fonts-->" | safeHTML }}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    {{ "<!-- Style load -->" | safeHTML }}
+    {{ $stylesheet := .Site.Data.webpack.main }}
+    {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+    {{ end }}
+
+    {{ "<!-- Global site tag (gtag.js) - Google Analytics -->" | safeHTML }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111993876-1" type="text/javascript"></script>
+    <script async type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-111993876-1');
+    </script>
+    <!-- end gtag -->
+
+    <script async type="application/ld+json">
+         { "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "NodeFactory",
+         "legalName" : "Node Factory d.o.o.",
+         "url": "https://www.nodefactory.io",
+         "logo": "https://www.nodefactory.io/images/NodeFactory_logo.png",
+         "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "Oreškovićeva 6v",
+         "addressLocality": "Zagreb",
+         "addressRegion": "Grad Zagreb",
+         "postalCode": "10000",
+         "addressCountry": "Croatia"
+         },
+         "sameAs": [
+         "https://www.linkedin.com/company/nodefactory",
+         "https://twitter.com/nodefactoryio"
+         ]}
+    </script>
+</head>
