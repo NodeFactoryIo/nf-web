@@ -1119,6 +1119,13 @@ footer p {
 .blog-header {
 	padding-top: 7%;
 	padding-bottom: 12%;
+
+	.date {
+		text-transform: uppercase;
+		margin: 10px 0;
+		color: white;
+		font-weight: 100;
+	}
 }
 
 .blog-list {
@@ -1130,6 +1137,34 @@ footer p {
 
 	.blog-row {
 		z-index: 2;
+	}
+}
+
+// blog details
+
+.blog-content-wrapper {
+	margin-top: -60px;
+	z-index: 3;
+	position: relative;
+	padding: 0 10%;
+
+	.blog-image {
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-height: 300px;
+		}
+	}
+
+	.blog-content {
+		padding: 2% 10% 10%;
+	}
+
+	h1, h2, h3 {
+		color: #052437;
 	}
 }
 

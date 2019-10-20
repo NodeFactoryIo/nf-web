@@ -1,15 +1,30 @@
 {{ define "main" }}
 
-<div class="mw6 center ph3 pv4">
-    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-    <div class="flex justify-between grey-3">
-        <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+    <div class="row landing">
+        {{- partial "header.html" . -}}
+
+        <section class="landingcontent blog-header">
+            <div class="column">
+                <h2>{{ .Title }}</h2>
+                <p class="date">{{ .Date.Format "January 2th, 2006." }}</p>
+            </div>
+
+            <div class="illustrations">
+                <img src="images/net.png" class="illustration-1" alt="network illustration">
+            </div>
+        </section>
     </div>
-    test
-    <div class="cms mw6">
-        <p>{{ .Description }}</p>
-        {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-        {{ .Content }}
+
+    <div class="blog-content-wrapper">
+        {{ if .Params.image }}
+            <div class="blog-image col-sm-12 col-md-6">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+            </div>
+        {{ end }}
+
+        <div class="blog-content">
+            {{ .Content }}
+        </div>
     </div>
-</div>
+
 {{ end }}
