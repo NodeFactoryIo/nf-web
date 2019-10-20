@@ -1,0 +1,27 @@
+<div class="blog-row">
+    <div class="row first-blog-background">
+        <div class="col-sm-12 col-md-6">
+            <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-6 first-blog-content">
+            <p>{{ .Date.Format "January, 2006." }}</p>
+            <a class="blog-link" href="{{ .RelPermalink }}">
+                <h4>{{ .Title }}</h4>
+            </a>
+            <div class="blog-first-button">
+                <a target="_blank" href="{{ .RelPermalink }}">
+                    <button class="link">READ ARTICLE</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="other-blogs hidden-md hidden-lg">
+        <p>{{ .Date.Format "January, 2006." }}</p>
+        <a target="_blank" rel="noreferrer" href="{{ .RelPermalink }}">
+            <h4>{{ .Title }}</h4>
+        </a>
+    </div>
+</div>

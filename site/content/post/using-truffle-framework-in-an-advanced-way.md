@@ -1,9 +1,6 @@
 ---
 title: Using Truffle framework in an advanced way
-date: 2018-26-06T15:04:10.000Z
-description: >-
-  If you are a blockchain developer or becoming one then you have probably heard of the Ethereum-Swiss-Knife framework called [Truffle](https://www.trufflesuite.com/). Ethereum is in it’s early stages and doesn’t have many advanced tools like you got used to in regular web development. However, using Truffle you get to do things easier and faster because it offers automated contract testing that is almost a requirement (more like necessity) now during development. Also, it is the only tool that has some kind of debug feature.
-  Here are a few things that we needed during development and that came really handy. If you are a beginner and using Truffle for the first time then come back here later, you will probably need this.
+date: 2018-06-26T15:04:10+01:00
 image: /images/blog/truffle.png
 draft: false
 ---
