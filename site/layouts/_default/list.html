@@ -1,14 +1,11 @@
 {{ define "main" }}
 
-{{- partial "blog-header" . -}}
+    {{- partial "blog-header" . -}}
 
-
-{{- partial "blog-row" . -}}
-
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-    <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-</p>
-{{ end }}
+    <div class="blog-list">
+        {{ range .Pages.ByPublishDate.Reverse }}
+            {{- partial "blog-row" . -}}
+        {{ end }}
+    </div>
 
 {{ end }}

@@ -687,6 +687,7 @@ header li a{
 .first-blog-background img{
 	max-width: 100%;
 	height: auto;
+	max-height: 300px;
 }
 
 .first-blog-content {
@@ -731,6 +732,7 @@ button.link {
 
 	.blog-link {
 		text-decoration: none;
+		flex: 1;
 	}
 
 	h4 {
@@ -1110,6 +1112,25 @@ input[type=submit]{
 footer p {
 	font-size: 0.8rem;
 	text-align: center;
+}
+
+// blog list
+
+.blog-header {
+	padding-top: 7%;
+	padding-bottom: 12%;
+}
+
+.blog-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 15%;
+	margin: -130px 0 10%;
+
+	.blog-row {
+		z-index: 2;
+	}
 }
 
 @import "layout/_menu";
