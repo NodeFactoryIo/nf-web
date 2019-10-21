@@ -1160,6 +1160,7 @@ footer p {
 		}
 	}
 
+	/// blog content style and typography
 	.blog-content {
 		padding: 2% 20% 10%;
 
@@ -1175,9 +1176,28 @@ footer p {
 			line-height: 1.85rem;
 		}
 
+		em {
+			font-style: italic;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
 		ol {
 			list-style: none;
 			counter-reset: item;
+		}
+
+		pre, code {
+			background: white;
+			line-height: 1.5rem;
+			padding: 5px;
+			font-family: Courier;
+		}
+
+		pre {
+			border: 1px solid #052437;
 		}
 
 		ol > li{
