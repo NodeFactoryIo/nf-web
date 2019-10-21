@@ -1153,6 +1153,7 @@ footer p {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		padding: 10px;
 
 		img {
 			max-height: 300px;
@@ -1160,11 +1161,44 @@ footer p {
 	}
 
 	.blog-content {
-		padding: 2% 10% 10%;
-	}
+		padding: 2% 20% 10%;
 
-	h1, h2, h3 {
-		color: #052437;
+		h1, h2, h3 {
+			color: #052437;
+			padding: 1.5rem 0;
+			font-weight: 500;
+		}
+
+		p {
+			font-size: 1.2rem;
+			padding: 12px 0;
+			line-height: 1.85rem;
+		}
+
+		ol {
+			list-style: none;
+			counter-reset: item;
+		}
+
+		ol > li{
+			font-size: 1.2rem;
+			counter-increment: item;
+			margin: 10px 0;
+		}
+
+		ol > li:before {
+			margin-right: 10px;
+			content: counter(item);
+			background: #33c1ff;
+			border-radius: 100%;
+			color: white;
+			text-align: center;
+			width: 1.3em;
+			height: 1.3em;
+			display: inline-flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
 	}
 }
 

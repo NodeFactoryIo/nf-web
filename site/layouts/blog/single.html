@@ -1,7 +1,7 @@
 {{ define "main" }}
 
     <div class="row landing">
-        {{- partial "header.html" . -}}
+        {{- partial "header" . -}}
 
         <section class="landingcontent blog-header">
             <div class="column">
@@ -17,8 +17,10 @@
 
     <div class="blog-content-wrapper">
         {{ if .Params.image }}
-            <div class="blog-image col-sm-12 col-md-6">
-                <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+            <div class="row center">
+                <div class="blog-image">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+                </div>
             </div>
         {{ end }}
 
@@ -26,5 +28,7 @@
             {{ .Content }}
         </div>
     </div>
+
+    {{- partial "contact" . -}}
 
 {{ end }}
