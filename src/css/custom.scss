@@ -540,10 +540,14 @@ header li a{
 }
 .projectimg {
 	flex: 1;
-}
 
-.projectimg img {
-	width: 80%;
+	img {
+		width: 80%;
+	}
+
+	img.max-size {
+		max-width: 300px;
+	}
 }
 
 .project-content{
