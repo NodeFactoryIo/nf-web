@@ -33,13 +33,13 @@ First of all, large portions of data were not meant to be stored on any blockcha
 
 Data must be encrypted to ensure that it can be read only between the right participants. Encryption functions are complex calculations to be done onchain so you can’t really do that through smart contracts. However, with the previously combined method of verification, you can store files encrypted offchain and hash onchain. Asynchronous encryption can be used to encrypt data with receiver’s public key and then to be able to decrypt it with receiver’s private key only known to receiver. This kind of flow is represented in the following schema.
 
-![Flow for storing verifiable, encrypted and trusted data](https://cdn-images-1.medium.com/max/2000/1*U7M4UfYH3IKzTsm2kUX_3w.png)*Flow for storing verifiable, encrypted and trusted data*
+{{<figure src="https://cdn-images-1.medium.com/max/2000/1*U7M4UfYH3IKzTsm2kUX_3w.png" title="Flow for storing verifiable, encrypted and trusted data" >}}
 
 **Building bridges**
 
 What if you can combine both in-house flexibility and global participants in economies of scale? A bridge between your private network and *mainnet* can be created so that users can convert their real ETH to a private network’s token or ETH and vice versa. Not only that offers lower transaction fees and faster transactions unaffected by *mainnet* congestion, but it also provides possibilities of economic incentives and the security of a *mainnet* network.
 
-![Example of a network design with a simple bridge connection](https://cdn-images-1.medium.com/max/2000/1*47-F1qGnN_3mgh9hbtRp2w.png)*Example of a network design with a simple bridge connection*
+{{<figure src="https://cdn-images-1.medium.com/max/2000/1*47-F1qGnN_3mgh9hbtRp2w.png" title="Example of a network design with a simple bridge connection" >}}
 
 This article mostly explains how private networks are done with the Ethereum blockchain but we are working on implementations using other networks too, so in the upcoming articles we will cover more about our experience with [Hyperledger Fabric](https://www.hyperledger.org/projects/fabric) and [Quorum](https://www.jpmorgan.com/country/US/en/Quorum).
 

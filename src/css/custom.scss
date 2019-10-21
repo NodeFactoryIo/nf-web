@@ -1170,6 +1170,10 @@ footer p {
 			font-weight: 500;
 		}
 
+		a {
+			color: #052437;
+		}
+
 		p {
 			font-size: 1.2rem;
 			padding: 12px 0;
@@ -1179,6 +1183,18 @@ footer p {
 			img {
 				display: flex;
 				margin: 0 auto;
+			}
+		}
+
+		figure {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 10px 0;
+
+			h4 {
+				font-size: 0.85rem;
+				color: rgba(0, 0, 0, 0.54);
 			}
 		}
 
@@ -1193,6 +1209,14 @@ footer p {
 		ol {
 			list-style: none;
 			counter-reset: item;
+		}
+
+		ul {
+			list-style: disc;
+
+			li {
+				margin-left: 30px;
+			}
 		}
 
 		pre, code {
