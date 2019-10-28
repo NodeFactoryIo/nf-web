@@ -218,7 +218,7 @@ header li a{
 
 .tekst {
 	h1 {
-		margin-right: 0.4rem;
+		margin-right: 2rem;
 	}
 
 	display: flex;
@@ -1132,11 +1132,20 @@ footer p {
 	padding-top: 7%;
 	padding-bottom: 12%;
 
+	@media only screen and (max-width: 480px) {
+		padding-left: 2em;
+	}
+
 	.date {
 		text-transform: uppercase;
 		margin: 10px 0;
 		color: white;
 		font-weight: 100;
+	}
+
+	.column h2 {
+		margin-right: 1rem;
+		line-height: 1.6rem;
 	}
 }
 
