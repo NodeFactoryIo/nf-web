@@ -933,8 +933,12 @@ button.link {
 	font-size: 1.2rem;
 }
 
-.input-row{
+.contact .input-row{
 	display: flex;
+
+	@media only screen and (max-width: 480px) {
+		flex-direction: column;
+	}
 }
 
 .input-row-first-input, .input-row-second-input, .input-row-third-input, .input-row-fourth-input{
@@ -942,10 +946,13 @@ button.link {
 }
 
 .input-row-fifth-input{
-	flex:2;
-	align-content: left;
+	display: flex;
+	flex: 1;
+	text-align: left;
+
 	input {
-		width: 90%;
+		display: flex;
+		flex: 1;
 	}
 }
 
