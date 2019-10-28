@@ -1,7 +1,7 @@
 ---
 title: How to become a validator in the new Ethereum 2.0 proof of stake system
 date: 2019-10-28T18:04:10-00:00
-image: /images/blog/solidity.png
+image: /images/blog/ethereum20-validator.png
 draft: false
 ---
 
