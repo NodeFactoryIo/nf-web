@@ -4,7 +4,12 @@
 
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} | NodeFactory{{ end }}</title>
+    {{ $isHomePage := eq .Title .Site.Title }}
+    {{ $title := .Title }}
+    {{ if not $isHomePage }}
+        {{ $title = print .Title " | NodeFactory" }}
+    {{ end }}
+    <title>{{ $title }}</title>
 
     {{ if .Description }}
     <meta name="description" content="{{ .Description }}">
@@ -27,17 +32,25 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+
     {{ "<!-- Open Graph data / Facebook Card data -->" | safeHTML }}
-    <meta property="og:title" content="NodeFactory - Blockchain research and development company">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.nodefactory.io">
+    <meta property="og:title" content="{{ $title }}">
+    {{ if $isHomePage }}
+        <meta property="og:type" content="website">
+    {{ else }}
+        <meta property="og:type" content="article">
+    {{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:image" content="https://www.nodefactory.io/images/NodeFactory_logo.png">
     <meta property="og:image:alt" content="NodeFactory logo">
     <meta property="og:description" content="Turning ideas into reliable products.">
+    <meta property="og:locale" content="{{ .Language.Lang }}">
 
     {{ "<!-- Twitter Card data -->" | safeHTML }}
+    <meta name="twitter:title" content="{{ $title }}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@nodefactoryio">
+    <meta name="twitter:url" content="{{ .Permalink }}" />
 
     {{ "<!-- Mobile header color for Chrome, Firefox OS and Opera -->" | safeHTML }}
     <meta name="theme-color" content="#2c638f">
