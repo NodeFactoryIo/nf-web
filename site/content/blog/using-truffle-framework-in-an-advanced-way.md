@@ -8,6 +8,7 @@ keywords:
 - truffle
 - ethereum tools
 - smart contracts development
+description: Few tips when coding smart contracts using Truffle framework.
 ---
 
 ## Linking and initializing contracts on deploy automatically

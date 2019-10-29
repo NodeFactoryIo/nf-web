@@ -8,6 +8,7 @@ keywords:
 - smart contracts
 - comments
 - documentation
+description: This article explains how to add inline comments when coding Ethereum's Solidity.
 ---
 
 Programming smart contracts on blockchain can sometimes be harder then we are used to when compared with other programming languages, especially because there are not many tools which we can help us in the process. Below you will find how we solved the documentation generation in Solidity.

@@ -7,6 +7,7 @@ keywords:
 - ethereum blockchain
 - private networks
 - permissioned networks
+description: Pros and cons of a public and private blockchain network.
 ---
 
 We’ve been often approached by clients that don’t feel comfortable with having some of their data shared with the world but are deluded with some myths on the Internet about how a private blockchain is created and works. This article will break some of the myths and try to answer most common questions.
