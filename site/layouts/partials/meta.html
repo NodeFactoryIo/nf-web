@@ -1,0 +1,119 @@
+{{ $isHomePage := eq .Title .Site.Title }}
+{{ $title := .Title }}
+{{ if not $isHomePage }}
+{{ $title = print .Title " | NodeFactory" }}
+{{ end }}
+<title>{{ $title }}</title>
+
+{{ if .Description }}
+<meta name="description" content="{{ .Description }}">
+{{ else }}
+<meta name="description" content="{{ .Site.Params.description }}">
+{{ end }}
+
+{{ if .Keywords }}
+<meta content='{{ delimit .Keywords ", " }}' name="keywords">
+{{ else }}
+<meta content='{{ delimit .Site.Params.keywords ", " }}' name="keywords">
+{{ end }}
+
+{{ $image := "https://www.nodefactory.io/images/NodeFactory_logo.png" }}
+{{ if .Params.image }}
+{{ $image = print "https://www.nodefactory.io" .Params.image }}
+{{ end }}
+
+{{ "<!-- Open Graph data / Facebook Card data -->" | safeHTML }}
+<meta property="og:title" content="{{ $title }}">
+{{ if $isHomePage }}
+<meta property="og:type" content="website">
+{{ else }}
+<meta property="og:type" content="article">
+{{ end }}
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:alt" content="NodeFactory logo">
+{{ if .Description }}
+<meta property="og:description" content="{{ .Description }}">
+{{ else }}
+<meta property="og:description" content="{{ .Site.Params.descriptionShort }}">
+{{ end }}
+<meta property="og:locale" content="{{ .Language.Lang }}">
+
+{{ "<!-- Twitter Card data -->" | safeHTML }}
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:card" content="summary">
+{{ if .Description }}
+<meta property="twitter:description" content="{{ .Description }}">
+{{ else }}
+<meta property="twitter:description" content="{{ .Site.Params.descriptionShort }}">
+{{ end }}
+<meta name="twitter:creator" content="@nodefactoryio">
+<meta name="twitter:image" content="{{ $image }}" />
+<meta name="twitter:image:src" content="{{ $image }}" />
+
+{{ if eq .Section "blog" }}
+    {{/* commented out
+        <!-- Pagination meta tags for list pages only -->
+        {{ $paginator := .Paginate (where .Pages "Section" "blog") }}
+        {{ if $paginator }}
+            <link rel="first" href="{{ $paginator.First.URL }}">
+            <link rel="last" href="{{ $paginator.Last.URL }}">
+            {{ if $paginator.HasPrev }}
+                <link rel="prev" href="{{ $paginator.Prev.URL }}">
+            {{end }}
+
+            {{ if $paginator.HasNext }}
+            <link rel="next" href="{{ $paginator.Next.URL }}">
+            {{end }}
+        {{end }}
+    */}}
+
+    <script defer type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Article",
+          "headline": {{ .Title }},
+          "author": {
+            "@type": "Organization",
+            "name": "NodeFactory"
+          },
+          "datePublished": "{{ .Date.Format "2006-01-02" }}",
+          "description": {{ .Description }},
+          "wordCount": {{ .WordCount }},
+          "mainEntityOfPage": "True",
+          "dateModified": "{{ .Date.Format "2006-01-02" }}",
+          "image": {
+            "@type": "imageObject",
+            "url": "{{ print "https://www.nodefactory.io" .Params.image }}"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "{{ .Site.Title }}",
+            "logo": {
+              "@type": "imageObject",
+              "url": "https://www.nodefactory.io/images/NodeFactory_logo.png"
+            }
+          }
+        }
+      </script>
+{{ else }}
+    <script async type="application/ld+json">
+         { "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "NodeFactory",
+         "legalName" : "Node Factory d.o.o.",
+         "url": "https://www.nodefactory.io",
+         "logo": "https://www.nodefactory.io/images/NodeFactory_logo.png",
+         "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "Oreškovićeva 6v",
+         "addressLocality": "Zagreb",
+         "addressRegion": "Grad Zagreb",
+         "postalCode": "10000",
+         "addressCountry": "Croatia"
+         },
+         "sameAs": [
+         "https://www.linkedin.com/company/nodefactory",
+         "https://twitter.com/nodefactoryio"
+         ]}
+    </script>
+{{ end }}

@@ -10,3 +10,4 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 [params]
     keywords = ["blockchain", "development", "ethereum", "smart contracts development", "infrastructure"]
     description = "Node Factory is a blockchain development agency that helps companies evolve using blockchain technologies."
+    descriptionShort = "Turning ideas into reliable products."
