@@ -3,6 +3,11 @@ title: How to document Solidity smart contracts with no sweat
 date: 2018-09-06T15:04:10-00:00
 image: /images/blog/solidity.png
 draft: false
+keywords:
+- Solidity
+- smart contracts
+- comments
+- documentation
 ---
 
 Programming smart contracts on blockchain can sometimes be harder then we are used to when compared with other programming languages, especially because there are not many tools which we can help us in the process. Below you will find how we solved the documentation generation in Solidity.

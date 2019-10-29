@@ -2,9 +2,16 @@
     <meta http-equiv="Content-Type" content="text/html;" charset="utf-8">
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-    <title>NodeFactory - Blockchain development company</title>
+    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} | NodeFactory{{ end }}</title>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Node Factory is a blockchain development agency that helps companies evolve using blockchain technologies.">
+    {{ if .Keywords }}
+    <meta content='{{ delimit .Keywords ", " }}' name="keywords">
+    {{ else }}
+    <meta content='{{ delimit .Site.Params.keywords ", " }}' name="keywords">
+    {{ end }}
 
     {{ "<!-- Favicon -->" | safeHTML }}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

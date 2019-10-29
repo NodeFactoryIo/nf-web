@@ -3,6 +3,11 @@ title: Using Truffle framework in an advanced way
 date: 2018-06-26T15:04:10+01:00
 image: /images/blog/truffle.png
 draft: false
+keywords:
+- ethereum development
+- truffle
+- ethereum tools
+- smart contracts development
 ---
 
 ## Linking and initializing contracts on deploy automatically

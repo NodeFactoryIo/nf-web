@@ -3,6 +3,11 @@ title: How to become a validator in the new Ethereum 2.0 proof of stake system
 date: 2019-10-28T18:04:10-00:00
 image: /images/blog/ethereum20-validator.png
 draft: false
+keywords:
+- ethereum 2.0
+- proof of staking
+- validator rewards
+- chainguardian
 ---
 
 This article explains how someone will be able to become a validator in Ethereum 2.0. New Ethereum will replace mining process as seen current Ethereum and use Proof of Stake consensus where validators will be the one maintaining the network. Those validators attestations are written on the Beacon chain. However, we won't get into those technical details and you don't even have to know all of that to take part in validating blocks.
