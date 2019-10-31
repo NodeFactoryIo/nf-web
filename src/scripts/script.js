@@ -6,3 +6,6 @@ enableMenu();
 
 import enableCarousels from './carousels';
 enableCarousels();
+
+import { oldWebCleanup } from './cache-cleanup'
+oldWebCleanup()
