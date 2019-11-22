@@ -20,6 +20,8 @@ leaders based on customer feedback and have declared leaders in a
 [recent press release](https://clutch.co/croatia/developers/blockchain). Based on our reviews, Clutch has awarded us a
 perfect ***5-star rating***!
 
+{{<figure src="/images/blog/Croatia_B2B_Companies_2019.png" height="200">}}
+
 In the reviews, we were praised for our product and our blockchain expertise.
 Some of them are:
 
