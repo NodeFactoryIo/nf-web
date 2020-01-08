@@ -815,7 +815,7 @@ button.link {
 
 	img {
 		max-width: 300px;
-		max-height: 400px;
+		max-height: 230px;
 
 		@media only screen and (max-width : 480px) {
 			max-width: 260px;
@@ -837,12 +837,12 @@ button.link {
 	bottom:0;
 
 	  .first-team-member-overlay-content {
-		  max-width: 350px;
+		  max-width: 320px;
 	  }
   }
   .team-content:hover  {
 	img {
-	   opacity: 0.5;
+	   opacity: 0.25;
 	}
 	.first-team-member-overlay {
 		display: flex;
