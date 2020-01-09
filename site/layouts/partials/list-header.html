@@ -3,7 +3,13 @@
 
     <section class="landingcontent blog-header">
         <div class="row">
-            <h2>Welcome to our blog</h2>
+            {{ if eq .Title "Blog" }}
+                <h2>Welcome to our blog</h2>
+            {{ end }}
+
+            {{ if eq .Title "Portfolio" }}
+                <h2>Our work</h2>
+            {{ end }}
         </div>
 
         <div class="illustrations">
