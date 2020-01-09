@@ -1,0 +1,14 @@
+---
+title: NovoProtocol
+image: /images/novo_mock.png
+link: test.com
+short: Commercial data marketplace that enables companies to request data on others anywhere in the world.    
+keywords: Ethereum dapp dataencryption IPFS
+---
+
+Development done:
+
+- Bounty system completely based on Ethereum smart contracts.
+- Data encryption.
+- Decentralized storage.
+- MetaMask authentication.

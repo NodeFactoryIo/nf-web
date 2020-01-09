@@ -4,7 +4,12 @@
 
     <div class="blog-list">
         {{ range .Pages.ByPublishDate.Reverse }}
-            {{- partial "blog-row" . -}}
+            {{ if eq .Title "Blog" }}
+                {{- partial "blog-row" . -}}
+            {{ else }}
+                {{- partial "portfolio-project" . -}}
+            {{ end }}
+
         {{ end }}
     </div>
 
