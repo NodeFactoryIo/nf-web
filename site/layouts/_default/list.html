@@ -7,9 +7,9 @@
 
         {{ range .Pages.ByPublishDate.Reverse }}
             {{ if eq $page "Blog" }}
-            {{- partial "blog-row" . -}}
+                {{- partial "blog-row" . -}}
             {{ else }}
-            {{- partial "portfolio-project" . -}}
+                {{- partial "portfolio-project" . -}}
             {{ end }}
         {{ end }}
     </div>

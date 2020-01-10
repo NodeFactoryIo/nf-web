@@ -1,0 +1,12 @@
+<div class="hidden-xs hidden-sm col-md-6 portfolio-project-list">
+    <h4>{{ .Title }}</h4>
+    <p class="description">{{ .Params.short }}</p>
+
+    <div class="keywords">
+        {{ range .Keywords }}
+        <div class="keyword-label">
+            {{ . }}
+        </div>
+        {{ end }}
+    </div>
+</div>

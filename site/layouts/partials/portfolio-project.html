@@ -1,20 +1,15 @@
 <div class="blog-row portfolio-list project-{{.Title}}">
     <div class="row project-container">
-        <div class="hidden-xs hidden-sm col-md-6 portfolio-project-list">
-            <h4>{{ .Title }}</h4>
-            <p class="description">{{ .Params.short }}</p>
-
-            <div class="keywords">
-                {{ range .Keywords }}
-                    <div class="keyword-label">
-                        {{ . }}
-                    </div>
-                {{ end }}
+        {{ if in "AllianceBlock" .Title }}
+            <div class="flex center col-sm-12 col-md-6">
+                <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
             </div>
-        </div>
-
-        <div class="flex center col-sm-12 col-md-6">
-            <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
-        </div>
+            {{- partial "portfolio-project-data" . -}}
+        {{ else }}
+            {{- partial "portfolio-project-data" . -}}
+            <div class="flex center col-sm-12 col-md-6">
+                <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
+            </div>
+        {{ end }}
     </div>
 </div>
