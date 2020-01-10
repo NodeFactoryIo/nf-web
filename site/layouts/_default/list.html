@@ -3,13 +3,14 @@
     {{- partial "list-header" . -}}
 
     <div class="blog-list">
-        {{ range .Pages.ByPublishDate.Reverse }}
-            {{ if eq .Title "Blog" }}
-                {{- partial "blog-row" . -}}
-            {{ else }}
-                {{- partial "portfolio-project" . -}}
-            {{ end }}
+        {{ $page := .Title }}
 
+        {{ range .Pages.ByPublishDate.Reverse }}
+            {{ if eq $page "Blog" }}
+            {{- partial "blog-row" . -}}
+            {{ else }}
+            {{- partial "portfolio-project" . -}}
+            {{ end }}
         {{ end }}
     </div>
 

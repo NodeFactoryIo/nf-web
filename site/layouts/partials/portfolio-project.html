@@ -1,15 +1,20 @@
-<div class="blog-row">
-    <div class="row first-blog-background">
-        <div class="flex center col-sm-12 col-md-6">
-            <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
+<div class="blog-row portfolio-list project-{{.Title}}">
+    <div class="row project-container">
+        <div class="hidden-xs hidden-sm col-md-6 portfolio-project-list">
+            <h4>{{ .Title }}</h4>
+            <p class="description">{{ .Params.short }}</p>
+
+            <div class="keywords">
+                {{ range .Keywords }}
+                    <div class="keyword-label">
+                        {{ . }}
+                    </div>
+                {{ end }}
+            </div>
         </div>
 
-        <div class="hidden-xs hidden-sm col-md-6 first-blog-content">
-            <h4>{{ .Title }}</h4>
-            <h5>{{ .Params.short }}</h5>
-            <h5>{{ delimit .Keywords ", " }}</h5>
-
-            <p>{{ .Content }}</p>
+        <div class="flex center col-sm-12 col-md-6">
+            <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
         </div>
     </div>
 </div>
