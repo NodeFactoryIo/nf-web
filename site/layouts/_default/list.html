@@ -5,10 +5,13 @@
     <div class="blog-list">
         {{ $page := .Title }}
 
-        {{ range .Pages.ByPublishDate.Reverse }}
-            {{ if eq $page "Blog" }}
-                {{- partial "blog-row" . -}}
-            {{ else }}
+        {{ if eq $page "Blog" }}
+            {{ range .Pages.ByPublishDate.Reverse }}
+                    {{- partial "blog-row" . -}}
+            {{ end }}
+
+        {{ else }}
+            {{ range .Pages.ByDate }}
                 {{- partial "portfolio-project" . -}}
             {{ end }}
         {{ end }}
