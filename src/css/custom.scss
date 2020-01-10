@@ -1340,18 +1340,24 @@ footer p {
 	background-color: rgb(20, 44, 80);
 }
 .project-Lisinski {
-	h4, h5, p, .keyword-label {
+	h4, h5, p {
 		color: #052437 !important;
 	}
 }
 .project-Sakura {
 	background-color: #C5C8BE;
-	h4, h5, p, .keyword-label {
+	h4, h5, p {
 		color: #052437 !important;
 	}
 }
 .project-MythX {
 	background-color: #3588C9;
+}
+.project-Lodestar {
+	background-color: #ffff46;
+	h4, h5, p {
+		color: #052437 !important;
+	}
 }
 
 @import "layout/_menu";

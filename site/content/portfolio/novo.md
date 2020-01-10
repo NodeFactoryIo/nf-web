@@ -2,7 +2,7 @@
 title: NovoProtocol
 image: /images/novo_mock.png
 short: Commercial data marketplace that enables companies to request data on others anywhere in the world.    
-keywords: Ethereum dapp encryption IPFS
+keywords: Ethereum ERC20 encryption IPFS
 ---
 
 Development done:
