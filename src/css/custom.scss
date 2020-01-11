@@ -1329,6 +1329,8 @@ footer p {
 	}
 
 	.project-container {
+		flex: 1;
+		justify-content: space-between;
 		padding: 1rem;
 	}
 }
@@ -1358,6 +1360,12 @@ footer p {
 	h4, h5, p {
 		color: #052437 !important;
 	}
+}
+.project-ChainGuardian {
+	background-color: #052437;
+}
+.project-Hactar {
+	background-color: #242B3D; // 1D2333
 }
 
 @import "layout/_menu";
