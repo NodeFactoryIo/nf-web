@@ -1336,10 +1336,24 @@ footer p {
 		flex: 1;
 		justify-content: space-between;
 		padding: 1rem;
+		position: relative;
 
-		img {
-			@media screen and (max-width: 480px) {
-				width: 90%;
+		.image-container {
+			display: flex;
+			flex: 1;
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 480px) {
+			height: 550px;
+
+			.image-container {
+				position: absolute;
+				left: 50%;
+				bottom: 5%;
+				right: 0;
+				transform: translate(-50%, 0);
+				width: 100%;
 			}
 		}
 	}
