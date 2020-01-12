@@ -1303,7 +1303,18 @@ footer p {
 
 	.portfolio-project-list {
 		margin: 1rem 0;
-		padding-left: 2rem;
+		padding: 0 2rem;
+
+		@media screen and (max-width: 480px) {
+			align-items: center;
+			padding: 0 1rem;
+			text-align: center;
+
+			img {
+				padding: 1.5rem 0;
+				max-width: 90%;
+			}
+		}
 
 		.keywords {
 			margin-top: 1rem;
@@ -1342,19 +1353,6 @@ footer p {
 			display: flex;
 			flex: 1;
 			justify-content: center;
-		}
-
-		@media screen and (max-width: 480px) {
-			height: 550px;
-
-			.image-container {
-				position: absolute;
-				left: 50%;
-				bottom: 5%;
-				right: 0;
-				transform: translate(-50%, 0);
-				width: 100%;
-			}
 		}
 	}
 }
