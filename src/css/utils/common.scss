@@ -7,3 +7,9 @@
     display: none !important;;
   }
 }
+
+.hide-small {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    display: none !important;;
+  }
+}
