@@ -1353,6 +1353,13 @@ footer p {
 			display: flex;
 			flex: 1;
 			justify-content: center;
+
+			img {
+				@media screen and (max-width: 1440px) {
+					max-width: 100%;
+					object-fit: contain;
+				}
+			}
 		}
 	}
 }

@@ -2,7 +2,7 @@
     <div class="row project-container">
         {{- partial "portfolio-project-data" . -}}
 
-        <div class="image-container hidden-xs col-sm-6">
+        <div class="image-container hide-mobile col-sm-6">
             <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
         </div>
     </div>
