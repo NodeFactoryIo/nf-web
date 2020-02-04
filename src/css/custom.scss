@@ -583,7 +583,7 @@ header li a{
 	background-size: contain !important;
 
 	@media only screen and (max-width : 480px) {
-		width: 120px;
+		width: 80px;
 		height: 40px;
 	}
 }
@@ -816,7 +816,7 @@ button.link {
 
 	img {
 		max-width: 300px;
-		max-height: 400px;
+		max-height: 230px;
 
 		@media only screen and (max-width : 480px) {
 			max-width: 260px;
@@ -838,12 +838,12 @@ button.link {
 	bottom:0;
 
 	  .first-team-member-overlay-content {
-		  max-width: 350px;
+		  max-width: 320px;
 	  }
   }
   .team-content:hover  {
 	img {
-	   opacity: 0.5;
+	   opacity: 0.25;
 	}
 	.first-team-member-overlay {
 		display: flex;
@@ -943,6 +943,7 @@ button.link {
 }
 
 .input-row-first-input, .input-row-second-input, .input-row-third-input, .input-row-fourth-input{
+	display: flex;
 	flex: 1;
 }
 
@@ -950,15 +951,12 @@ button.link {
 	display: flex;
 	flex: 1;
 	text-align: left;
-
-	input {
-		display: flex;
-		flex: 1;
-	}
 }
 
 input[type=text], [type=textarea] {
-	width: 80%;
+	display: flex;
+	flex: 1;
+	min-width: 0;
 	padding:0.8rem;
 	margin: 2rem 1rem 1rem 1rem;
 	border:1px solid #ECECEC;
@@ -1005,11 +1003,9 @@ input[type=submit]{
 /*Social buttons*/
 .social-buttons {
 	display: flex;
-	flex: 4;
 	justify-content: center;
-	width: 100%;
 	flex-direction: row;
-	padding: 2rem 0 2rem 0;
+	padding: 2rem 0;
 }
 
 .social-buttons-background {
@@ -1023,8 +1019,8 @@ input[type=submit]{
 	background-image: -moz-linear-gradient( 90deg, rgb(26,97,128) 0%, rgb(51,193,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(26,97,128) 0%, rgb(51,193,255) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(26,97,128) 0%, rgb(51,193,255) 100%);
-	width: 5rem;
-	height: 5rem;
+	width: 4rem;
+	height: 4rem;
 	text-decoration: none;
   }
 
@@ -1034,7 +1030,7 @@ input[type=submit]{
 	display: inline-block;
 	text-align: center;
  	vertical-align: baseline;
-	}
+}
 
 
 
@@ -1155,7 +1151,11 @@ footer p {
 	flex-direction: column;
 	justify-content: center;
 	padding: 0 15%;
-	margin: -10% 0 10%;
+
+	@media screen and (max-width: 768px) {
+		padding: 0 1rem;
+	}
+		margin: -10% 0 10%;
 
 	.blog-row {
 		z-index: 2;
@@ -1290,6 +1290,113 @@ footer p {
 			left: -35px;
 		}
 	}
+}
+
+// portfolio page
+
+.portfolio-list {
+	margin: 1rem;
+	border-radius: 5px;
+	box-shadow: 1px 2px 4.9px 0.1px rgba(112, 130, 55, 0.25);
+
+	&:hover {
+		box-shadow: 5px 5px 10px 0.6px  #d9dbdd;
+	}
+
+	.portfolio-project-list {
+		margin: 1rem 0;
+		padding: 0 2rem;
+
+		@media screen and (max-width: 480px) {
+			align-items: center;
+			padding: 0 1rem;
+			text-align: center;
+
+			img {
+				padding: 1.5rem 0;
+				max-width: 90%;
+			}
+		}
+
+		.keywords {
+			margin-top: 1rem;
+		}
+
+		.description {
+			padding: 1rem 0;
+		}
+
+		.keyword-label {
+			display: inline-block;
+			background: rgba(0, 0, 0, 0.3);
+			padding: 8px 15px;
+			border-radius: 50px;
+			margin: 5px 0;
+			font-size: 0.85rem;
+			font-weight: bold;
+		}
+
+		h4 {
+			font-weight: bold;
+		}
+
+		h4, h5, p, .keyword-label {
+			color: white;
+		}
+	}
+
+	.project-container {
+		flex: 1;
+		justify-content: space-between;
+		padding: 1rem;
+		position: relative;
+
+		.image-container {
+			display: flex;
+			flex: 1;
+			justify-content: center;
+
+			img {
+				@media screen and (max-width: 1440px) {
+					max-width: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+}
+.project-NovoProtocol {
+	background-color: #0a5253;
+
+}
+.project-AllianceBlock {
+	background-color: rgb(20, 44, 80);
+}
+.project-Lisinski {
+	h4, h5, p {
+		color: #052437 !important;
+	}
+}
+.project-Sakura {
+	background-color: #C5C8BE;
+	h4, h5, p {
+		color: #052437 !important;
+	}
+}
+.project-MythX {
+	background-color: #3588C9;
+}
+.project-Lodestar {
+	background-color: #ffff46;
+	h4, h5, p {
+		color: #052437 !important;
+	}
+}
+.project-ChainGuardian {
+	background-color: #052437;
+}
+.project-Hactar {
+	background-color: #242B3D; // 1D2333
 }
 
 @import "layout/_menu";

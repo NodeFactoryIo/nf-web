@@ -1,10 +1,19 @@
 {{ define "main" }}
 
-    {{- partial "blog-header" . -}}
+    {{- partial "list-header" . -}}
 
     <div class="blog-list">
-        {{ range .Pages.ByPublishDate.Reverse }}
-            {{- partial "blog-row" . -}}
+        {{ $page := .Title }}
+
+        {{ if eq $page "Blog" }}
+            {{ range .Pages.ByPublishDate.Reverse }}
+                    {{- partial "blog-row" . -}}
+            {{ end }}
+
+        {{ else }}
+            {{ range .Pages.ByDate }}
+                {{- partial "portfolio-project" . -}}
+            {{ end }}
         {{ end }}
     </div>
 
