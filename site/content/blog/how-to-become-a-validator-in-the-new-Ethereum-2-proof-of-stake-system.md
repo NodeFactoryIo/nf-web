@@ -14,7 +14,7 @@ description: Learn how Ethereum Proof of Stake system will look, what do you nee
 This article explains how someone will be able to become a validator in Ethereum 2.0. New Ethereum will replace mining process as seen current Ethereum and use Proof of Stake consensus where validators will be the one maintaining the network. Those validators attestations are written on the Beacon chain. However, we won't get into those technical details and you don't even have to know all of that to take part in validating blocks.
 
 
-## What's the current status of Ethereum 2.0 development?
+### What's the current status of Ethereum 2.0 development?
 
 Specification is there and seven different node clients are actively working on their implementation. The reason for this is that they are written in different languages and will have a different specializations i.e. being focused on the browser or resource constrained devices. Also, not all of them will survive (but that's ok). In current Ethereum (Eth1) survivors are Geth and Parity. Current active Eth2 clients are: [Lodestar](https://github.com/ChainSafe/lodestar), [Nimbus](https://github.com/status-im/nimbus), [Lighthouse](https://github.com/sigp/lighthouse), [Prysm](https://github.com/prysmaticlabs/prysm), [Trinity](https://github.com/ethereum/trinity) and [Harmony](https://github.com/ether-camp/ethereum-harmony) + [Artemis](https://github.com/PegaSysEng/artemis) that should merge together.
 
@@ -25,15 +25,20 @@ They all have their own testnets but they all gathered in September on an intero
 
 Good news is that in the latest Eth2 spec release (v0.9.0) an official deposit contract has been declared as finished!
 
+***Update on Jan 8 2020:*** BLS standards announced as completed in Eth2 spec! No more roadblocks.
+
 All inital deposits, that will happen on Eth1 chain, will be used by Eth2 chain to secure the network upon launch by leveraging the security pool and value of existing Ether.
 
+## Testnet is here!
 
-## How much can you earn by being a validator?
+[Sapphire Testnet](https://prylabs.net) is a public network where you can stake Goerli test ETH and join as validator.
+
+### How much can you earn by being a validator?
 
 What a great question! Yes, you get a reward if your attestations get included in a block but the reward depends on the whole state of the network i.e. how many validators are online. The economics of this are still being examined and are to be tested. Latest estimates are that validators can expect *4.6% – 10.3%* in annualized rewards. However, the spec is still being updated which results in a lot of estimates so we can only recommend you the following links to understand better:
  - [Examining the Proposed Validator Economics of Ethereum 2.0](https://media.consensys.net/examining-the-proposed-validator-economics-of-ethereum-2-0-82b934fb4326)
  - [Eth 2.0 Economics](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-economics/)
-
+ - [ETH2 Calculator](https://docs.google.com/spreadsheets/d/15tmPOvOgi3wKxJw7KQJKoUe-uonbYR6HF7u83LR5Mj4/edit#gid=107311254)
 
 
 Basically, the math for validator return of investment (ROI) is:
@@ -46,7 +51,7 @@ The goal is to encourage people to become validators and have many as possible t
 **Unfortunately, the numbers above in the links are most probably going to be changed as the [Eth2 spec](https://github.com/ethereum/eth2.0-specs) is constantly being updated.**
 
 
-## What do you need to become a validator?
+### What do you need to become a validator?
 
 Basically, here are the minimum requirements for being a validator:
  - have 32 ETH,
@@ -58,7 +63,7 @@ Hardware requirements for running the node will be better determined during test
 Keep in mind that your uptime and therefore an Internet connection are the most important things as your stake gets slashed if you are offline, meaning that you are losing your money.
 
 
-## How to become a validator?
+### How to become a validator?
 
 The validator setup requires some technical knowledge and understanding. However, we want to enable everyone to easily become a validator and know how well they perform. This will be possible with the desktop app that we are working on - ChainGuardian. Soon more info about that, you can track for progress our [NodeFactory Twitter](https://twitter.com/nodefactoryio) and [ChainGuardian Github](http://github.com/nodefactoryIo/chainGuardian) or [join our Discord](https://discord.gg/k6Cu6PB)! This app is being built thanks to [MolochDAO](https://molochdao.com).
 
@@ -80,12 +85,12 @@ Basically, to become a validator, here are the steps that one needs to take:
 
 Once again, those steps will be a part of the ChainGuardian app onboarding. 
 
-#### Note about your key pairs
+## Note about your key pairs
  
 What's important to understand when handling your validator node are validator keys. You should have a ***signing key*** which is a hot wallet - unlocked account that app client uses for voting and proposing blocks. Also, you need a ***withdrawal*** key that is a separated cold wallet which will be used for funds withdrawal in case you want to stop being a validator or your signing key gets comprimised.
 
 
-## Conclusion
+### Conclusion
 
 This is Ethereum 2.0 (Serenity) Phase 0 which includes launch of Beacon chain that manages the Casper Proof of Stake protocol for itself and all of the shard chains. Being a Phase 0 only, we won't have all the new features of Ethereum 2.0 just yet. For example, there is currently no way to withdraw deposited Ether from Eth2 as it is effectively burned in Eth1. However, although the transfers weren't planned in Phase 0, this is still open to discussion and changes.
 
