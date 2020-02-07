@@ -8,6 +8,8 @@ title = "NodeFactory - Blockchain research and development company"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 
+canonifyurls = true
+
 [params]
     keywords = ["blockchain", "development", "ethereum", "smart contracts development", "infrastructure"]
     description = "Node Factory is a blockchain development agency that helps companies evolve using blockchain technologies."
