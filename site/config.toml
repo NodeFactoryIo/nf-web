@@ -8,7 +8,7 @@ title = "NodeFactory - Blockchain research and development company"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 
-canonifyurls = true
+relativeURLs = true
 
 [params]
     keywords = ["blockchain", "development", "ethereum", "smart contracts development", "infrastructure"]
