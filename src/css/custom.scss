@@ -514,10 +514,10 @@ header li a{
 	color: white;
 }
 
-.project1 {
+.project1, .project2 {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	overflow: hidden;
 
 	@media screen and (max-width: 500px){
 		flex-direction: column;
@@ -533,17 +533,34 @@ header li a{
 			line-height: 2.5rem;
 		}
 	}
+
+
+	.project-content {
+		text-align: left;
+		max-width: 40rem;
+		margin-right: 2rem;
+		margin-left: 12rem;
+	}
+
 }
 
-.project-content{
-	text-align: left;
-	max-width: 40rem;
-	margin-right: 2rem;
+.project2 {
+	justify-content: flex-end;
+	.project-content {
+		margin-left: 2rem;
+		margin-right: 12rem;
+	}
 }
 
-.projectimg {
+
+.project1 .projectimg {
 	margin-left: -16rem;
 }
+
+.project2 .projectimg {
+	margin-right: -16rem;
+}
+
 
 #line h5{
 	font-weight: 400;
