@@ -313,6 +313,7 @@ header li a{
 	background-color: #f9f9f9;
 	padding-top: 4rem;
 	text-align: center;
+	margin-bottom: 1rem;
 }
 
 .service-background {
@@ -382,6 +383,7 @@ header li a{
 .approach {
 	text-align: center;
 	padding: 4rem 0 4rem 0;
+	background-color: #D0EDF9;
 }
 
 .approach-content {
@@ -409,6 +411,10 @@ header li a{
 	justify-content: space-evenly;
 	flex-direction: column;
 	position: relative;
+
+	img {
+		z-index: 1;
+	}
 }
 
 // Show lines between approach images on desktops
@@ -421,7 +427,6 @@ header li a{
 		width: 10em;
 		height: .3em;
 		background: white;
-		z-index: -1;
 	}
 
 	.approach-image::after {
@@ -432,7 +437,6 @@ header li a{
 		width: 10em;
 		height: .3em;
 		background: white;
-		z-index: -1;
 	}
 
 	.approach-background:first-child {
@@ -477,15 +481,9 @@ header li a{
 	position: relative;
 }
 
-.projects h3{
-	color: #ffffff;
-}
-.projects h4{
-	color: #ffffff;
-}
-
 .projects h5 {
 	padding-top: 6%;
+	color: #052437;
 }
 
 .projects p {
