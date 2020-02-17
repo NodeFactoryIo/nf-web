@@ -373,17 +373,20 @@ header li a{
 /*Approach*/
 
 
-.approach-background {
-	display: flex;
-	//max-width:18rem;
-	//min-width:18rem;
-	position: relative;
-}
-
 .approach {
 	text-align: center;
 	padding: 4rem 0 4rem 0;
 	background-color: #D0EDF9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.approach-background {
+		display: flex;
+		//max-width:18rem;
+		//min-width:18rem;
+		position: relative;
+	}
 }
 
 .approach-content {
