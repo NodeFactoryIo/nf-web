@@ -483,6 +483,10 @@ header li a{
 	height: 100%;
 	position: relative;
 
+	h4 {
+		font-weight: bold;
+	}
+
  	h5 {
 		padding-top: 6%;
 		color: #052437;
@@ -499,6 +503,8 @@ header li a{
 		display: flex;
 		align-items: center;
 		font-weight: bold;
+		letter-spacing: .1rem;
+
 		span {
 			margin-left: 0.5rem;
 			margin-top: 1rem;
