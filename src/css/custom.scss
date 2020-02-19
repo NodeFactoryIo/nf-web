@@ -214,6 +214,7 @@ header li a{
 	font-size:1.5em;
 	font-weight: 700;
 	color: #178FC4;
+	cursor: pointer;
 }
 
 .tekst {
@@ -487,11 +488,6 @@ header li a{
 		font-weight: bold;
 	}
 
- 	h5 {
-		padding-top: 6%;
-		color: #052437;
-	}
-
 	p {
 		font-size: 1.2rem;
 		padding-bottom: 2%;
@@ -505,10 +501,26 @@ header li a{
 		font-weight: bold;
 		letter-spacing: .1rem;
 
+		&.small-width svg {
+			padding: 0 6px;
+		}
+
 		span {
 			margin-left: 0.5rem;
 			margin-top: 1rem;
 			margin-bottom: 0.5rem;
+		}
+	}
+
+	.see-more {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-right: 10rem;
+		margin-top: -2rem;
+
+		p {
+			padding-bottom: 0;
 		}
 	}
 }
@@ -743,19 +755,14 @@ header li a{
 
 button.link {
 	cursor: pointer;
-}
-
-.first-blog-content button {
 	box-shadow: none;
-	background:none;
+	background: none;
 	align-items: left;
 	border: none;
-	//padding: 1rem 1rem 1rem 10rem;
 	font-weight: 700;
 	font-size: 1.4rem;
 	color: #052437;
-
-
+	text-transform: uppercase;
 }
 
 .blog-row{
@@ -803,11 +810,11 @@ button.link {
 	max-height: 18rem;
 }
 
-.blog-second-button button{
+button.box {
 	box-shadow: none;
 	background: #ffffff;
 	border: 1px solid #005A81;
-	margin-top: 4%;
+	margin-top: 1rem;
 	padding: 0 48px;
 	font-weight: 700;
 	font-size: 1.5rem;
@@ -1029,7 +1036,9 @@ input[type=submit]{
  padding-left: 0.5rem;
 }
 
-
+.blog-second-button button {
+	margin-top: 4%;
+}
 
 /*Social buttons*/
 .social-buttons {
