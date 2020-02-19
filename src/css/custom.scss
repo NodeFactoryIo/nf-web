@@ -570,11 +570,8 @@ header li a{
 	}
 
 	@media screen and (max-width: 500px){
-		align-items: flex-end;
-		margin: 0 2.5rem;
-
-		.projectimg {
-			max-width: 50%;
+		.projectimg img {
+			max-width: 100%;
 		}
 	}
 
@@ -584,6 +581,7 @@ header li a{
 		display: flex;
 		align-self: flex-end;
 		margin-right: 3rem;
+		text-align: right;
 
 		@media screen and (min-width: 1024px) {
 			text-align: left;
@@ -591,8 +589,11 @@ header li a{
 			margin-left: 12rem;
 			align-self: center;
 		}
-	}
 
+		@media screen and (max-width: 768px) {
+			margin: 0 1rem;
+		}
+	}
 }
 
 .project2 {
@@ -618,7 +619,9 @@ header li a{
 			text-align: left;
 			margin-right: 2rem;
 			margin-left: 12rem;
+			align-self: center;
 		}
+	}
 }
 
 
@@ -628,6 +631,10 @@ header li a{
 	@media screen and (min-width: 1024px) {
 		margin-left: -16rem;
 	}
+
+	@media screen and (max-width: 768px) {
+		margin-left: -11rem;
+	}
 }
 
 .project2 .projectimg {
@@ -635,6 +642,10 @@ header li a{
 
 	@media screen and (min-width: 1024px) {
 		margin-right: -16rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-right: -11rem;
 	}
 }
 
