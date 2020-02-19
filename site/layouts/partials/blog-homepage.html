@@ -1,5 +1,5 @@
 <section id="blog" class="wrapper blog">
-    <h3>Blog</h3>
+    <h3>Our thoughts</h3>
     {{ range last 1 .Site.RegularPages.ByDate }}
         {{- partial "blog-row" . -}}
     {{ end }}
