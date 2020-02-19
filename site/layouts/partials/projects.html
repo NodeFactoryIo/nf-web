@@ -1,138 +1,87 @@
 <section id="projects" class="projects">
-    <div class="wrapper">
-        <a class="carousel-control left">
-            <i class="fas fa-chevron-left"></i>
-        </a>
-        <a class="carousel-control right">
-            <i class="fas fa-chevron-right"></i>
-        </a>
-
+    <div class="">
         <h3>Projects</h3>
-        <div class="siema">
+        <div class="projects-list">
             <div class="project1">
-                <div class="projectimg">
-                    <img src="images/allianceblock_mock.png" alt="AllianceBlock">
+                <div class="projectimg chainguardian">
+                    <img src="images/home_project_CG_large.png" alt="ChainGuardian">
                 </div>
 
+                <div class="row flex-column project-content">
+                    <h4>ChainGuardian</h4>
+                    <p>All-in-one tool for Ethereum 2.0 validators. Analytics reporting with validator onboarding and deposit.</p><br />
+
+                    <h5 class="list">{{ readFile "static/images/icons/desktop.svg" | safeHTML }}
+                        <span>Desktop app development</span>
+                    </h5>
+
+                    <h5 class="list">{{ readFile "static/images/icons/blockchain.svg" | safeHTML }}
+                        <span>Blockchain development</span>
+                    </h5>
+
+                    <h5 class="list">{{ readFile "static/images/icons/design.svg" | safeHTML }}
+                        <span>UX/UI design</span>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="project2">
                 <div class="row flex-column project-content">
                     <h4>Allianceblock</h4>
-                    <p>Decentralized AI-powered investment and financing platform, community-driven and fully transparent.</p>
-                    <p>Development done:<br>
-                        - Smart contracts generation and deployment. <br>
-                        - Multi-blockchain client wallet. <br>
-                        - Scaling of backend transaction relaying. <br>
-                    </p>
+                    <p>Decentralized AI-powered investment and financing platform, community-driven and fully
+                        transparent.</p><br />
 
-                    <h5>#nodejs #contractfactory #ethereum #microservices  </h5>
+                    <h5 class="list">{{ readFile "static/images/icons/blockchain.svg" | safeHTML }}
+                        <span>Blockchain consulting</span>
+                    </h5>
+
+                    <h5 class="list small-width">{{ readFile "static/images/icons/mobile.svg" | safeHTML }}
+                        <span>Mobile development</span>
+                    </h5>
+
+                    <h5 class="list">{{ readFile "static/images/icons/support.svg" | safeHTML }}
+                        <span>Support</span>
+                    </h5>
+                </div>
+
+                <div class="projectimg">
+                    <img src="images/home_project_AB_large.png"
+                         srcset="images/home_project_AB.png 480w images/home_project_AB_large.png 800w"
+                         alt="AllianceBlock">
                 </div>
             </div>
 
             <div class="project1">
                 <div class="projectimg">
-                    <img src="images/novo_mock.png" alt="Novo protocol">
+                    <img src="images/home_project_hactar_large.png"
+                         srcset="images/home_project_hactar.png 480w images/home_project_hactar_large.png 800w"
+                         alt="Hactar">
                 </div>
 
                 <div class="row flex-column project-content">
-                    <h4>NovoProtocol</h4>
-                    <p>Commercial data marketplace that enables companies to request data on others anywhere in the world.</p>
-                    <p>Development done: <br/>
-                        - Bounty system completely based on Ethereum smart contracts.  <br />
-                        - Data encryption. <br />
-                        - Decentralized storage. <br />
-                        - MetaMask authentication. <br />
-                    </p>
+                    <h4>Hactar</h4>
+                    <p>Monitoring app for Filecoin miner nodes with statistics dashboard, earnings optimizations and offline alerts.</p><br />
 
-                    <h5>#Ethereum #dapp #dataencryption #IPFS</h5>
-                </div>
-            </div>
+                    <h5 class="list">{{ readFile "static/images/icons/development.svg" | safeHTML }}
+                        <span>Web development</span>
+                    </h5>
 
-            <div class="project1">
-                <div class="projectimg">
-                    <img src="images/eatmybet_mock.png" alt="EatMyBet">
-                </div>
+                    <h5 class="list">{{ readFile "static/images/icons/blockchain.svg" | safeHTML }}
+                        <span>Go plugin development</span>
+                    </h5>
 
-                <div class="row flex-column project-content">
-                    <h4>EatMyBet</h4>
-                    <p>Player vs. Player betting application for football World Cup 2018.</p>
-                    <p>Development done: <br/>
-                        - Smart contracts.  <br />
-                        - Game results scraper. <br />
-                        - Oracle to access the results from blockchain. <br />
-                    </p>
-
-                    <h5>#betting #oracle #Ethereum</h5>
-                </div>
-            </div>
-
-            <div class="project1">
-                <div class="projectimg">
-                    <img src="images/lisinski_mock.png" alt="Lisinski testnet">
-                </div>
-
-                <div class="row flex-column project-content">
-                    <h4>Lisinski</h4>
-                    <p>Multi-client POA testnet for Croatian Ethereum development community</p>
-                    <br />
-                    <p>Participated in creation and maintaining a private version of the Ethereum blockchain primarily created for the Croatian Ethereum development community.</p>
-                    <p>We are validators and hosts of faucet and explorer.</p>
-
-                    <h5>#privatenetworks #POA #Ethereum #experiments</h5>
-                </div>
-            </div>
-
-            <div class="project1">
-                <div class="projectimg">
-                    <img src="images/sakura_mock.png" alt="Sakura">
-                </div>
-
-                <div class="row flex-column project-content">
-                    <h4>Sakura</h4>
-                    <p>Decentralized & fun lottery game made completely on Ethereum smart contracts.</p>
-                    <p>Work done: <br/>
-                        - Smart contracts.  <br />
-                        - Randomization on blockchain. <br />
-                    </p>
-
-                    <h5>#Ethereum #lottery #dapp #Redis</h5>
-                </div>
-            </div>
-
-            <div class="project1">
-                <div class="projectimg">
-                    <img src="images/riobot_mock.png" alt="RioBot">
-                </div>
-
-                <div class="row flex-column project-content">
-                    <h4>RioBot</h4>
-                    <p>Chatbot platform for online appointments over Facebook Messenger.</p>
-                    <p>Work done: <br/>
-                        - Automatic deployment of chatbot to any Facebook page.<br />
-                        - Natural language processing. <br />
-                        - Admin panel with Google calendar integration. <br />
-                    </p>
-
-                    <h5>#NLP #chatbot #React #Laravel</h5>
-                </div>
-            </div>
-
-            <div class="project1">
-                <div class="projectimg">
-                    <img class="max-size" src="images/partners/chainsafe-01.png" alt="ChainSafe">
-                </div>
-
-                <div class="row flex-column project-content">
-                    <h4>Lodestar</h4>
-                    <p>Our CTO collaborates with ChainSafe on
-                        infrastructure development of Eth 2.0.</p><br />
-                    <p> - TypeScript implementation of the Beacon Chain.</p>
-
-                    <h5>#eth2 #typescript #ProofOfStake</h5>
+                    <h5 class="list">{{ readFile "static/images/icons/consulting.svg" | safeHTML }}
+                        <span>Product management</span>
+                    </h5>
                 </div>
             </div>
         </div>
 
-        <div id="line">
-            <h5> Connect with us to learn how we can transform your business! </h5>
+        <div class="see-more">
+            <p>Looking for more?</p>
+            <a href="/portfolio">
+                <button class="link box">View portfolio</button>
+            </a>
         </div>
     </div>
 </section>

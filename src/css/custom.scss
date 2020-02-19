@@ -214,6 +214,7 @@ header li a{
 	font-size:1.5em;
 	font-weight: 700;
 	color: #178FC4;
+	cursor: pointer;
 }
 
 .tekst {
@@ -313,6 +314,7 @@ header li a{
 	background-color: #f9f9f9;
 	padding-top: 4rem;
 	text-align: center;
+	margin-bottom: 1rem;
 }
 
 .service-background {
@@ -372,17 +374,24 @@ header li a{
 /*Approach*/
 
 
-.approach-background {
-	display: flex;
-	//max-width:18rem;
-	//min-width:18rem;
-	position: relative;
-}
-
 .approach {
-	color: #f9f9f9;
 	text-align: center;
 	padding: 4rem 0 4rem 0;
+	background-color: #D0EDF9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.wrapper.row {
+		margin: 0;
+	}
+
+	.approach-background {
+		display: flex;
+		//max-width:18rem;
+		//min-width:18rem;
+		position: relative;
+	}
 }
 
 .approach-content {
@@ -394,6 +403,13 @@ header li a{
 	flex-direction:column;
 	align-items: center;
 
+	h4 {
+		letter-spacing: 0.05rem;
+	}
+
+	b  {
+		font-weight: bold;
+	}
 }
 
 .approach-image  img{
@@ -411,6 +427,10 @@ header li a{
 	justify-content: space-evenly;
 	flex-direction: column;
 	position: relative;
+
+	img {
+		z-index: 1;
+	}
 }
 
 // Show lines between approach images on desktops
@@ -423,7 +443,6 @@ header li a{
 		width: 10em;
 		height: .3em;
 		background: white;
-		z-index: -1;
 	}
 
 	.approach-image::after {
@@ -434,7 +453,6 @@ header li a{
 		width: 10em;
 		height: .3em;
 		background: white;
-		z-index: -1;
 	}
 
 	.approach-background:first-child {
@@ -471,30 +489,60 @@ header li a{
 .projects {
 	display: block;
 	width: 100%;
-	background-color: #197AA4;
+	//background-color: #197AA4;
 	margin: 0 0;
 	padding: 3.5rem 0;
-	color: #ffffff;
 	text-align: center;
 	height: 100%;
 	position: relative;
-}
 
-.projects h3{
-	color: #ffffff;
-}
-.projects h4{
-	color: #ffffff;
-}
+	h4 {
+		font-weight: bold;
+	}
 
-.projects h5 {
-	padding-top: 6%;
-}
+	p {
+		font-size: 1.2rem;
+		padding-bottom: 2%;
+	}
 
-.projects p {
-	font-size: 1.2rem;
-	padding-bottom: 2%;
-	color: #fff;
+	.list {
+		color: #052437;
+		font-size: 1rem;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+		letter-spacing: .1rem;
+		padding-bottom: 2%;
+		line-height: 1.75rem;
+
+		&.small-width svg {
+			padding: 0 6px;
+		}
+
+		span {
+			margin-left: 0.5rem;
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	.see-more {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-right: 10rem;
+		margin-top: -2rem;
+
+		@media screen and (max-width: 1024px) {
+			align-items: center;
+			margin: 3rem 0 0;
+		}
+
+		p {
+			padding-bottom: 0;
+		}
+	}
 }
 
 .carousel-control {
@@ -520,41 +568,98 @@ header li a{
 	color: white;
 }
 
-.project1 {
+.project1, .project2 {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	margin: 2rem 0;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+		margin: 0;
+	}
 
 	@media screen and (max-width: 500px){
-		flex-direction: column;
+		.projectimg img {
+			max-width: 100%;
+		}
+	}
+
+	.project-content {
+		max-width: 30rem;
 		align-items: flex-end;
-		margin: 0 2.5rem;
+		display: flex;
+		align-self: flex-end;
+		margin-right: 3rem;
+		text-align: right;
 
-		.projectimg {
-			width: 50%;
+		@media screen and (min-width: 1024px) {
+			text-align: right;
+			margin-right: 2rem;
+			margin-left: 12rem;
+			align-self: center;
 		}
 
-		h5 {
-			width: 70%;
-			line-height: 2.5rem;
+		@media screen and (max-width: 768px) {
+			margin: 0 1rem;
 		}
 	}
 }
-.projectimg {
-	flex: 1;
 
-	img {
-		width: 80%;
+.project2 {
+	display: flex;
+	flex-direction: column-reverse;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+		justify-content: flex-end;
+		margin-top: -2rem;
+		margin-bottom: -2rem;
 	}
 
-	img.max-size {
-		max-width: 300px;
+	.project-content {
+		max-width: 30rem;
+		text-align: left;
+		align-items: flex-start;
+		display: flex;
+		align-self: flex-start;
+		margin-left: 3rem;
+
+		@media screen and (min-width: 1024px) {
+			text-align: left;
+			margin-right: 2rem;
+			margin-left: 12rem;
+			align-self: center;
+		}
 	}
 }
 
-.project-content{
-	text-align: left;
-	flex: 1;
-	margin-right: 2.5rem;
+
+.project1 .projectimg {
+	margin-left: -30rem;
+
+	@media screen and (min-width: 1024px) {
+		margin-left: -16rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-left: -11rem;
+	}
 }
+
+.project2 .projectimg {
+	margin-right: -30rem;
+
+	@media screen and (min-width: 1024px) {
+		margin-right: -16rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-right: -11rem;
+	}
+}
+
 
 #line h5{
 	font-weight: 400;
@@ -712,19 +817,14 @@ header li a{
 
 button.link {
 	cursor: pointer;
-}
-
-.first-blog-content button {
 	box-shadow: none;
-	background:none;
+	background: none;
 	align-items: left;
 	border: none;
-	//padding: 1rem 1rem 1rem 10rem;
 	font-weight: 700;
 	font-size: 1.4rem;
 	color: #052437;
-
-
+	text-transform: uppercase;
 }
 
 .blog-row{
@@ -772,11 +872,11 @@ button.link {
 	max-height: 18rem;
 }
 
-.blog-second-button button{
+button.box {
 	box-shadow: none;
 	background: #ffffff;
 	border: 1px solid #005A81;
-	margin-top: 4%;
+	margin-top: 1rem;
 	padding: 0 48px;
 	font-weight: 700;
 	font-size: 1.5rem;
@@ -998,7 +1098,9 @@ input[type=submit]{
  padding-left: 0.5rem;
 }
 
-
+.blog-second-button button {
+	margin-top: 4%;
+}
 
 /*Social buttons*/
 .social-buttons {
@@ -1051,7 +1153,7 @@ input[type=submit]{
 		background: url(/images/footer-elipse-mobile-02.svg);
 	}
 
-	@media only screen and (min-width : 480px) and (max-width: 10240px) {
+	@media only screen and (min-width : 480px) and (max-width: 1024px) {
 		background: url(/images/footer-elipse-tablet.svg);
 	}
 
