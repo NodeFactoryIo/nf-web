@@ -67,34 +67,37 @@
         {{end }}
     */}}
 
-    <script defer type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "Article",
-          "headline": {{ .Title }},
-          "author": {
-            "@type": "Organization",
-            "name": "NodeFactory"
-          },
-          "datePublished": "{{ .Date.Format "2006-01-02" }}",
-          "description": {{ .Description }},
-          "wordCount": {{ .WordCount }},
-          "mainEntityOfPage": "True",
-          "dateModified": "{{ .Date.Format "2006-01-02" }}",
-          "image": {
-            "@type": "imageObject",
-            "url": "{{ print "https://www.nodefactory.io" .Params.image }}"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "{{ .Site.Title }}",
-            "logo": {
-              "@type": "imageObject",
-              "url": "https://www.nodefactory.io/images/NodeFactory_logo.png"
+    {{/* Display article structured data only if article, not /blog/ */}}
+    {{ if ne .Title "Blog" }}
+        <script defer type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Article",
+              "headline": {{ .Title }},
+              "author": {
+                "@type": "Organization",
+                "name": "NodeFactory"
+              },
+              "datePublished": "{{ .Date.Format "2006-01-02" }}",
+              "description": {{ .Description }},
+              "wordCount": {{ .WordCount }},
+              "mainEntityOfPage": "True",
+              "dateModified": "{{ .Date.Format "2006-01-02" }}",
+              "image": {
+                "@type": "imageObject",
+                "url": "{{ print "https://www.nodefactory.io" .Params.image }}"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "{{ .Site.Title }}",
+                "logo": {
+                  "@type": "imageObject",
+                  "url": "https://www.nodefactory.io/images/NodeFactory_logo.png"
+                }
+              }
             }
-          }
-        }
-      </script>
+          </script>
+    {{ end }}
 {{ else }}
     <script async type="application/ld+json">
          { "@context": "https://schema.org",
