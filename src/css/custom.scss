@@ -319,10 +319,10 @@ header li a{
 
 .service-background {
 	max-height: 359px;
-	margin-top: 1rem; 
+	margin-top: 1rem;
 	display: flex;
 	padding: 1rem;
-	position: relative;	
+	position: relative;
 	background-color: #ffffff;
 	box-shadow: 1px 2px 4.9px 0.1px rgba(112, 130, 55, 0.1);
 }
@@ -340,7 +340,7 @@ header li a{
 	align-items: center;
 	//margin-left: 1.5rem;
 	//margin-right: 1.5rem;
-	//width: 260px;	
+	//width: 260px;
 }
 
 .service-content i{
@@ -923,7 +923,7 @@ button.box {
 	}
 }
 
-//Overlay 
+//Overlay
 
   .first-team-member-overlay {
 	display: none;
@@ -1089,7 +1089,7 @@ input[type=submit]{
 	border: none;
 	font-weight: 700;
 	font-size: 1.2rem;
-	color: #052437;	
+	color: #052437;
 }
 
 .input-row i{
@@ -1367,9 +1367,9 @@ footer p {
 			border: 1px solid #052437;
 		}
 
-		ol > li{
+		ul, ol > li{
 			font-size: 1.2rem;
-			line-height: 1.5rem;
+			line-height: 2rem;
 			counter-increment: item;
 			margin: 12px 0 12px 35px;
 			position: relative;
@@ -1386,7 +1386,7 @@ footer p {
 			height: 1.3em;
 			display: inline-flex;
 			justify-content: center;
-			align-items: flex-start;
+			align-items: center;
 			position: absolute;
 			left: -35px;
 		}
