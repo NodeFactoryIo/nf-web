@@ -1,6 +1,6 @@
 ---
 title: Bringing wallet interoperability to Ethereum blockchain users
-date: 2020-04-05T18:04:10-00:00
+date: 2020-04-06T11:04:10-00:00
 image: /images/blog/polkadot_metamask.png
 draft: false
 keywords:
