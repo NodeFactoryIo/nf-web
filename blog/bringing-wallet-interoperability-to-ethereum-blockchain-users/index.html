@@ -17,14 +17,14 @@
 
 
 
-<title>How to document Solidity smart contracts with no sweat | NodeFactory</title>
+<title>Bringing wallet interoperability to Ethereum blockchain users | NodeFactory</title>
 
 
-<meta name="description" content="This article explains how to add inline comments when coding Ethereum&#39;s Solidity.">
+<meta name="description" content="Building support for Polkadot in MetaMask wallet using MetaMask’s new plugin system - snaps.">
 
 
 
-<meta content='Solidity, smart contracts, comments, documentation' name="keywords">
+<meta content='polkadot, substrate, metamask, snap' name="keywords">
 
 
 
@@ -33,26 +33,26 @@
 
 
 <!-- Open Graph data / Facebook Card data -->
-<meta property="og:title" content="How to document Solidity smart contracts with no sweat | NodeFactory">
+<meta property="og:title" content="Bringing wallet interoperability to Ethereum blockchain users | NodeFactory">
 
 <meta property="og:type" content="article">
 
-<meta property="og:image" content="https://www.nodefactory.io/images/blog/solidity.png">
+<meta property="og:image" content="https://www.nodefactory.io/images/blog/polkadot_metamask.png">
 <meta property="og:image:alt" content="NodeFactory logo">
 
-<meta property="og:description" content="This article explains how to add inline comments when coding Ethereum&#39;s Solidity.">
+<meta property="og:description" content="Building support for Polkadot in MetaMask wallet using MetaMask’s new plugin system - snaps.">
 
 <meta property="og:locale" content="en">
 
 <!-- Twitter Card data -->
-<meta name="twitter:title" content="How to document Solidity smart contracts with no sweat | NodeFactory">
+<meta name="twitter:title" content="Bringing wallet interoperability to Ethereum blockchain users | NodeFactory">
 <meta name="twitter:card" content="summary">
 
-<meta property="twitter:description" content="This article explains how to add inline comments when coding Ethereum&#39;s Solidity.">
+<meta property="twitter:description" content="Building support for Polkadot in MetaMask wallet using MetaMask’s new plugin system - snaps.">
 
 <meta name="twitter:creator" content="@nodefactoryio">
-<meta name="twitter:image" content="https://www.nodefactory.io/images/blog/solidity.png" />
-<meta name="twitter:image:src" content="https://www.nodefactory.io/images/blog/solidity.png" />
+<meta name="twitter:image" content="https://www.nodefactory.io/images/blog/polkadot_metamask.png" />
+<meta name="twitter:image:src" content="https://www.nodefactory.io/images/blog/polkadot_metamask.png" />
 
 
     
@@ -63,19 +63,19 @@
             {
               "@context": "http://schema.org",
               "@type": "Article",
-              "headline": "How to document Solidity smart contracts with no sweat",
+              "headline": "Bringing wallet interoperability to Ethereum blockchain users",
               "author": {
                 "@type": "Organization",
                 "name": "NodeFactory"
               },
-              "datePublished": "2018-09-06",
-              "description": "This article explains how to add inline comments when coding Ethereum's Solidity.",
-              "wordCount":  497 ,
+              "datePublished": "2020-04-05",
+              "description": "Building support for Polkadot in MetaMask wallet using MetaMask’s new plugin system - snaps.",
+              "wordCount":  672 ,
               "mainEntityOfPage": "True",
-              "dateModified": "2018-09-06",
+              "dateModified": "2020-04-05",
               "image": {
                 "@type": "imageObject",
-                "url": "https:\/\/www.nodefactory.io\/images\/blog\/solidity.png"
+                "url": "https:\/\/www.nodefactory.io\/images\/blog\/polkadot_metamask.png"
               },
               "publisher": {
                 "@type": "Organization",
@@ -138,8 +138,8 @@
     <div class="menu-bg" id="menu-bg"></div>
 </header><section class="landingcontent blog-header">
             <div class="column">
-                <h2>How to document Solidity smart contracts with no sweat</h2>
-                <p class="date">September 6th, 2018.</p>
+                <h2>Bringing wallet interoperability to Ethereum blockchain users</h2>
+                <p class="date">April 5th, 2020.</p>
             </div>
 
             <div class="illustrations">
@@ -152,76 +152,60 @@
         
             <div class="row center">
                 <div class="blog-image">
-                    <img src="../../images/blog/solidity.png" alt="How to document Solidity smart contracts with no sweat" />
+                    <img src="../../images/blog/polkadot_metamask.png" alt="Bringing wallet interoperability to Ethereum blockchain users" />
                 </div>
             </div>
         
 
         <div class="blog-content">
-            <p>Programming smart contracts on blockchain can sometimes be harder then we are used to when compared with other programming languages, especially because there are not many tools which we can help us in the process. Below you will find how we solved the documentation generation in Solidity.</p>
+            
 
-<p>Why is commenting Solidity smart contracts important? There are two main reasons:</p>
+<h1 id="bringing-wallet-interoperability-to-ethereum-blockchain-users">Bringing wallet interoperability to Ethereum blockchain users</h1>
+
+<p>NodeFactory is building support for <a href="https://polkadot.network">Polkadot</a> in <a href="http://metamask.io">MetaMask</a> wallet using MetaMask’s new plugin system. This plugin should support all Substrate-based chains such as Kusama and later Polkadot.</p>
+
+<p>As more and more different types and niche - blockchain networks emerge, we are required to first learn how to use them and install new applications that are specific to that blockchain. Even if you are already experienced with one type of network i.e. <a href="https://ethereum.org">Ethereum</a>, it’s still a process to start using something else. An experienced Ethereum user has already installed multiple types of wallets or similar applications. While redundancy here is great, sometimes we should take it easy on our end users and not request an app for everything.</p>
+
+<h2 id="what-s-new">What&rsquo;s new?</h2>
+
+<p>MetaMask web wallet is the oldest decentralized application (dApp) login system and therefore the first choice for many of today’s most active Ethereum users. That is obvious by the numbers with <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">1M+ Chrome downloads</a>. The good news is that the MetaMask team recently introduced <a href="https://github.com/MetaMask/metamask-snaps-beta/wiki">snaps</a>, a plugin system that allows dApp developers to request access to the extension’s APIs. This enables dApps to do much more for their specific needs. However, the NodeFactory team saw an opportunity here to connect MetaMask to other blockchain networks too, specifically Polkadot. Polkadot is a sharded protocol that enables blockchain networks to operate seamlessly at scale.</p>
+
+<p>As part of the <a href="https://web3.foundation/grants">Web3 Foundation grant program</a>, NodeFactory is on the road to deliver a <a href="https://github.com/NodeFactoryIo/metamask-snap-polkadot">MetaMask snap</a> that will allow Ethereum users to interact with Polkadot dApps using MetaMask.</p>
+
+<h2 id="how-will-this-work">How will this work</h2>
+
+<p>The integration of the Polkadot wallet snap unlocks all MetaMask users’ interactions with Polkadot dApps. This will enable simple and easy onboarding of existing Ethereum users into Polkadot.</p>
+
+<p>Snap would be able to generate Polkadot account keys from dApp’s unique MetaMask key. This also means that users will automatically get a Polkadot wallet generated per dApp. Snap will enable the wallet to:</p>
 
 <ul>
-<li><p>help out developer who will inherit that smart contract,</p></li>
-
-<li><p>help out developer or a user that will consume your smart contract.</p></li>
+<li>Receive and send units such as KSM on <a href="https://kusama.network">Kusama network</a> and later DOTs on Polkadot,</li>
+<li>Read and keep track of unit balance</li>
+<li>Sign messages and interact with dApps</li>
+<li>Receive notification of successful or failed transactions</li>
+<li>Receive notifications of incoming transactions.</li>
 </ul>
 
-<p>So, how should you do it? Well, there is <a href="https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format">Ethereum natural specification format</a> that is developed and promoted by Ethereum itself. It’s very similar to documentation format of other popular programming languages but with one distinctions — it uses <code>///</code> instead of <code>//</code> (although <code>/** ... */</code> blocks are supported).</p>
+<p>NodeFactory team will develop this MetaMask snap and prepare integration for existing dApp <a href="https://github.com/polkadot-js/apps/tree/master/packages/page-accounts">Polkadot accounts</a>. Other dApp developers will simply be able to support the snap using NodeFactory’s snap documentation.</p>
 
-<p>Here are the Ethereum natural specification tags and rules:</p>
+<h2 id="technical-challenges">Technical challenges</h2>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*68pXA0aJzYHbqwfWWbZ4jA.png" alt="Ethereum Natural Specification Format tags" /><em>Ethereum Natural Specification Format tags</em></p>
+<p>MetaMask extensions are fairly new; The main challenge in the snap development is <a href="https://github.com/Agoric/ses-shim">Secure EcmaScript (SES)</a>. SES is a secure runtime for executing third-party code safely. It has <a href="https://github.com/tc39/proposal-ses">strict rules</a> for code that’s going to be executed.</p>
 
-<p>Whatever the reason that made you document your code, you will soon find it’s quite tedious and time consuming to write documentation since there is quite a lot of boilerplate text for each function. That’s why we’ve made simple <a href="https://atom.io/"><strong>Atom</strong></a> plugin — <a href="https://atom.io/packages/solidity-comments">solidity-comments</a>. It contains basic functionally for generating all the boilerplate documentation for your Solidity smart contract by pressing the following combination of keys: Ctrl + Alt + G.</p>
+<p>The most problematic rules for NodeFactory team were WebAssembly (Wasm) and code in comments prohibition, which prevented the snap development from using Polkadot libraries like <a href="https://polkadot.js.org/common/util-crypto/">@polkadot/util-crypto</a> and <a href="https://polkadot.js.org/api/">@polkadot/api</a>. In case you are interested how the problem was resolved, you can checkout the NodeFactory’s solution in this <a href="https://github.com/MetaMask/snaps-cli/pull/50">pull request</a>.</p>
 
-<p>For example, if you have the following code:</p>
+<p><code>ed25519</code> keys are currently used since they have JavaScript fallback in Polkadot libraries. <a href="https://github.com/polkadot-js/api/issues/2062">Library compatibility with SES Github issue</a> is used to track found problems with Polkadot libraries in SES.</p>
 
-<pre><code>    pragma solidity 0.4.24;
+<h2 id="stay-tuned">Stay tuned</h2>
 
-    contract SomeContract {
+<p>By the current development timeline, NodeFactory expects to have MetaMask available for Polkadot in two months.
+Note that MetaMask version with snaps is still in beta version, but NodeFactory team is positive about the development, having in mind the traction it gained and the potential it unlocks.</p>
 
-    function test(uint _param1, uint _param2) external {
-            require(_param1 == 1 &amp;&amp; _param2 == 2);
-        }
-    }
-</code></pre>
+<p>Going forward, it’s important to remark that using snaps and APIs as a base-layer solution might be an inspiration for alternative wallets and other blockchain tools to take their product to the next level.</p>
 
-<p>and you press Ctrl + Alt + G , you will get:</p>
+<p>Also, feel free to check out our <a href="https://github.com/NodeFactoryIo/metamask-snap-polkadot">Github repository</a> for development updates! Generating Polkadot compatible keys and making read-only actions to the Kusama network is already supported.</p>
 
-<pre><code>    pragma solidity 0.4.24;
-
-    /// [@title](http://twitter.com/title) SomeContract
-    /// [@notice](http://twitter.com/notice)
-    /// [@dev](http://twitter.com/dev)
-    contract SomeContract {
-
-        /// [@notice](http://twitter.com/notice)
-        /// [@dev](http://twitter.com/dev)
-        /// [@param](http://twitter.com/param) _param1
-        /// [@param](http://twitter.com/param) _param2
-        /// [@return](http://twitter.com/return)
-        function test(uint _param1, uint _param2) external {
-            require(_param1 == 1 &amp;&amp; _param2 == 2);
-        }
-    }
-</code></pre>
-
-<p>and then you just have to fill in the blanks. Cool, right?</p>
-
-<p>We know, not everyone uses Atom, that’s why we extracted logic into separate <a href="https://github.com/NodeFactoryIo/solidity-comments-core"><strong>solidity-comments-core</strong> library</a> and we will soon implement a CLI interface for this. As for other IDEs, we would very much like to port this plugin to other editors especially <a href="https://www.jetbrains.com/webstorm/">Webstorm</a>, so we are currently investigating what is the easiest way to port that JavaScript library into other languages (Java for Webstorm and Python for <a href="https://www.sublimetext.com/">Sublime Text</a>). If you have any suggestion for porting, feel free to contact us!</p>
-
-<p>Plugin still misses couple of necessary features, where most important one is to update function documentation if params have changed. If you want to contribute or make plugin for some other IDE, checkout our repository:
-<a href="https://github.com/NodeFactoryIo/solidity-comments-core">Solidity comments core</a>.</p>
-
-<p>When you need to export your documentation into HTML, you can use documentation generator like <a href="https://github.com/DigixGlobal/doxity">Doxity</a> from Ethereum or <a href="https://github.com/OpenZeppelin/solidity-docgen">docgen</a> from OpenZeppelin.</p>
-
-<p>Happy documented coding!</p>
-
-<p><strong><em>Follow us on <a href="https://medium.com/@nodefactory">Medium</a> or <a href="https://twitter.com/nodefactoryio">Twitter</a> if you want more blockchain development insights like this.</em></strong></p>
-
-<p><em>Node Factory is a blockchain development company committed to developing new technologies and leveraging them to make better applications worldwide. Let us know what we can do for you.</em></p>
+<p><em>NodeFactory is a blockchain R&amp;D company that turns ideas into reliable solutions. We are always looking for new adventures so let us know about your project by contacting us in the form below! In case you need help with any of the mentioned, join our <a href="https://discord.gg/adsEWkS">Discord</a> or follow us on <a href="https://twitter.com/nodefactoryio">Twitter</a>.</em></p>
 
         </div>
     </div><section id="contact" class="wrapper contact">
