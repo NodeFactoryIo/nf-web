@@ -64,6 +64,11 @@ body{
 
 	padding-left: 2rem !important;
 	padding-right: 2rem !important;
+
+	@media screen and (max-width: 480px) {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
 }
 
 .row {
@@ -341,25 +346,23 @@ header li a{
 	//margin-left: 1.5rem;
 	//margin-right: 1.5rem;
 	//width: 260px;
-}
 
-.service-content i{
-	padding-top: 1.5rem;
-	padding-bottom: 3rem;
-	font-size: 80px;
-	background:linear-gradient(307deg , #33C1FF, #178FC4, #1A6180);
-	background: linear-gradient(307deg , #33C1FF, #178FC4, #1A6180);
-	background: linear-gradient(307deg , #33C1FF, #178FC4, #1A6180);
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	background-clip: text;
-   -webkit-text-fill-color:transparent;
-}
+	i {
+		padding-top: 1.5rem;
+		padding-bottom: 3rem;
+		font-size: 80px;
+		background: linear-gradient(307deg, #33C1FF, #178FC4, #1A6180);
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-.service-content img{
-	padding-top: 1.5rem;
-	padding-bottom: 3rem;
-	max-width: 100px;
+	img {
+		padding-top: 1.5rem;
+		padding-bottom: 3rem;
+		max-width: 100px;
+	}
 }
 
 .services h4{
@@ -1141,15 +1144,15 @@ input[type=submit]{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #D0EDF9;
-	background-repeat: no-repeat;
-	background-position-x:center;
+	background: #D0EDF9 no-repeat;
+	background-position: center;
     background-size: cover !important;
 	width: 100%;
 	padding: 6rem 0 4rem 0;
 
 	@media only screen and (max-width : 480px) {
 		background: url(/images/footer-elipse-mobile-02.svg);
+		padding: 4rem 0 0;
 	}
 
 	@media only screen and (min-width : 480px) and (max-width: 1024px) {
