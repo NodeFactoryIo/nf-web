@@ -37,6 +37,7 @@
 <meta property="og:description" content="{{ .Site.Params.descriptionShort }}">
 {{ end }}
 <meta property="og:locale" content="{{ .Language.Lang }}">
+<meta property="og:url" content="{{ .Permalink }}">
 
 {{ "<!-- Twitter Card data -->" | safeHTML }}
 <meta name="twitter:title" content="{{ $title }}">
