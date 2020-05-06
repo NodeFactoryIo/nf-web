@@ -1,5 +1,5 @@
 <section id="blog" class="wrapper blog">
-    <h3>Our thoughts</h3>
+    <h2>Our thoughts</h2>
     {{ range last 1 .Site.RegularPages.ByDate }}
         {{- partial "blog-row" . -}}
     {{ end }}
@@ -12,7 +12,7 @@
                     <img alt="{{ .Title }} image" src="{{ index .Params "image" }}">
                 </div>
                 <p>{{ .Date.Format "January, 2006." }}</p>
-                <h4>{{ .Title }}</h4>
+                <h3>{{ .Title }}</h3>
             </a>
         </div>
         {{ end }}

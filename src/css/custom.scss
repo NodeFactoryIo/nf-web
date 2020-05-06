@@ -93,6 +93,21 @@ h1 {
 }
 
 h2 {
+	font-size: 2.5rem;
+	color: #052437;
+	padding-bottom: 2rem;
+}
+
+ h3 {
+	 font-weight: 300;
+	 font-size: 1.75rem;
+	 line-height: 2rem;
+	 font-weight: 400;
+	 color: #052437;
+	 padding-bottom: 1rem;
+}
+
+h4 {
 	font-size: 1.2rem;
 	color: white;
 	margin-top: 4%;
@@ -100,21 +115,6 @@ h2 {
 	@media screen and (min-width: 1440px) {
 		font-size: 1.6rem;
 	}
-}
-
- h3 {
-	font-size: 2.5rem;
-	color: #052437;
-	padding-bottom: 2rem;
-}
-
-h4 {
-	font-weight: 300;
-	font-size: 1.75rem;
-	line-height: 2rem;
-	font-weight: 400;
-	color: #052437;
-	padding-bottom: 1rem;
 }
 
 h5 {
@@ -365,7 +365,7 @@ header li a{
 	}
 }
 
-.services h4{
+.services h3 {
 	height: 4rem;
 }
 .services p{
@@ -406,7 +406,7 @@ header li a{
 	flex-direction:column;
 	align-items: center;
 
-	h4 {
+	h3 {
 		letter-spacing: 0.05rem;
 	}
 
@@ -471,7 +471,7 @@ header li a{
 	}
 }
 
-.approach-content h4{
+.approach-content h3{
 	height: 4rem;
 }
 .approach-content p{
@@ -499,7 +499,7 @@ header li a{
 	height: 100%;
 	position: relative;
 
-	h4 {
+	h3 {
 		font-weight: bold;
 	}
 
@@ -1002,7 +1002,7 @@ button.box {
 	padding: 1rem 2rem 0rem 2rem;
 }
 
-.team h4 {
+.team h3 {
 	font-size: 1.5rem;
 	font-weight: 500;
 	padding:  1rem 1rem;
@@ -1182,7 +1182,7 @@ input[type=submit]{
 	}
 }
 
-.footer h4, .footer a {
+.footer h3, .footer a {
 	font-size: 1rem;
 	font-weight: 600;
 	text-align: center;
