@@ -17,14 +17,14 @@
 
 
 
-<title>How to document Solidity smart contracts with no sweat | NodeFactory</title>
+<title>How decentralized exchanges are paving new ways for token offerings | NodeFactory</title>
 
 
-<meta name="description" content="This article explains how to add inline comments when coding Ethereum&#39;s Solidity.">
+<meta name="description" content="An overview on the new ways that decentralized exchanges offer for a token offering and listing.">
 
 
 
-<meta content='Solidity, smart contracts, comments, documentation' name="keywords">
+<meta content='ethereum, erc20, token, offering' name="keywords">
 
 
 
@@ -33,27 +33,27 @@
 
 
 <!-- Open Graph data / Facebook Card data -->
-<meta property="og:title" content="How to document Solidity smart contracts with no sweat | NodeFactory">
+<meta property="og:title" content="How decentralized exchanges are paving new ways for token offerings | NodeFactory">
 
 <meta property="og:type" content="article">
 
-<meta property="og:image" content="https://www.nodefactory.io/images/blog/solidity.png">
+<meta property="og:image" content="https://www.nodefactory.io/images/blog/dex-offering.png">
 <meta property="og:image:alt" content="NodeFactory logo">
 
-<meta property="og:description" content="This article explains how to add inline comments when coding Ethereum&#39;s Solidity.">
+<meta property="og:description" content="An overview on the new ways that decentralized exchanges offer for a token offering and listing.">
 
 <meta property="og:locale" content="en">
-<meta property="og:url" content="https://nodefactory.io/blog/how-to-document-solidity-smart-contracts-with-no-sweat/">
+<meta property="og:url" content="https://nodefactory.io/blog/how-decentralized-exchanges-are-paving-new-ways-for-token-offerings/">
 
 <!-- Twitter Card data -->
-<meta name="twitter:title" content="How to document Solidity smart contracts with no sweat | NodeFactory">
+<meta name="twitter:title" content="How decentralized exchanges are paving new ways for token offerings | NodeFactory">
 <meta name="twitter:card" content="summary">
 
-<meta property="twitter:description" content="This article explains how to add inline comments when coding Ethereum&#39;s Solidity.">
+<meta property="twitter:description" content="An overview on the new ways that decentralized exchanges offer for a token offering and listing.">
 
 <meta name="twitter:creator" content="@nodefactoryio">
-<meta name="twitter:image" content="https://www.nodefactory.io/images/blog/solidity.png" />
-<meta name="twitter:image:src" content="https://www.nodefactory.io/images/blog/solidity.png" />
+<meta name="twitter:image" content="https://www.nodefactory.io/images/blog/dex-offering.png" />
+<meta name="twitter:image:src" content="https://www.nodefactory.io/images/blog/dex-offering.png" />
 
 
     
@@ -64,19 +64,19 @@
             {
               "@context": "http://schema.org",
               "@type": "Article",
-              "headline": "How to document Solidity smart contracts with no sweat",
+              "headline": "How decentralized exchanges are paving new ways for token offerings",
               "author": {
                 "@type": "Organization",
                 "name": "NodeFactory"
               },
-              "datePublished": "2018-09-06",
-              "description": "This article explains how to add inline comments when coding Ethereum's Solidity.",
-              "wordCount":  497 ,
+              "datePublished": "2020-05-06",
+              "description": "An overview on the new ways that decentralized exchanges offer for a token offering and listing.",
+              "wordCount":  819 ,
               "mainEntityOfPage": "True",
-              "dateModified": "2018-09-06",
+              "dateModified": "2020-05-06",
               "image": {
                 "@type": "imageObject",
-                "url": "https:\/\/www.nodefactory.io\/images\/blog\/solidity.png"
+                "url": "https:\/\/www.nodefactory.io\/images\/blog\/dex-offering.png"
               },
               "publisher": {
                 "@type": "Organization",
@@ -140,8 +140,8 @@
     <div class="menu-bg" id="menu-bg"></div>
 </header><section class="landingcontent blog-header">
             <div class="column">
-                <h2>How to document Solidity smart contracts with no sweat</h2>
-                <p class="date">September 6th, 2018.</p>
+                <h2>How decentralized exchanges are paving new ways for token offerings</h2>
+                <p class="date">May 6th, 2020.</p>
             </div>
 
             <div class="illustrations">
@@ -154,76 +154,61 @@
         
             <div class="row center">
                 <div class="blog-image">
-                    <img src="../../images/blog/solidity.png" alt="How to document Solidity smart contracts with no sweat" />
+                    <img src="../../images/blog/dex-offering.png" alt="How decentralized exchanges are paving new ways for token offerings" />
                 </div>
             </div>
         
 
         <div class="blog-content">
-            <p>Programming smart contracts on blockchain can sometimes be harder then we are used to when compared with other programming languages, especially because there are not many tools which we can help us in the process. Below you will find how we solved the documentation generation in Solidity.</p>
+            
 
-<p>Why is commenting Solidity smart contracts important? There are two main reasons:</p>
+<p>We could all agree that initial coin offerings (ICOs) that we&rsquo;ve seen in 2017. are gone but the need for a blockchain project crowdsale mechanism is still here. For a short time we&rsquo;ve also seen initial exchange offerings (IEOs) and security token offerings (STOs) were almost there but seems like regulations, required for it&rsquo;s success, were not.</p>
 
-<ul>
-<li><p>help out developer who will inherit that smart contract,</p></li>
+<h2 id="what-is-initial-dex-offering-ido">What is Initial DEX Offering (IDO)?</h2>
 
-<li><p>help out developer or a user that will consume your smart contract.</p></li>
-</ul>
+<p>Recently, on April 28th., a token sale with a new mechanism was launched via a decentralized exchange <a href="https://uniswap.io">Uniswap</a>. This was done by <a href="https://umaproject.org/">UMA protocol</a>, an Ethereum-based platform for issuing and trading synthetic assets.</p>
 
-<p>So, how should you do it? Well, there is <a href="https://github.com/ethereum/wiki/wiki/Ethereum-Natural-Specification-Format">Ethereum natural specification format</a> that is developed and promoted by Ethereum itself. It’s very similar to documentation format of other popular programming languages but with one distinctions — it uses <code>///</code> instead of <code>//</code> (although <code>/** ... */</code> blocks are supported).</p>
+<h3 id="how-uniswap-exchange-offering-worked">How Uniswap exchange offering worked</h3>
 
-<p>Here are the Ethereum natural specification tags and rules:</p>
+<p>What UMA Protocol did was <a href="https://medium.com/uma-project/umas-initial-uniswap-listing-afa7b6f6a330">put 2% of total token supply</a> into Uniswap for sale with the starting price of 0.26$ per token. Because the Uniswap exchange works on liquidity pools, UMA had to provide 535k$ of ETH into a newly created liquidity pool to have that initial price.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*68pXA0aJzYHbqwfWWbZ4jA.png" alt="Ethereum Natural Specification Format tags" /><em>Ethereum Natural Specification Format tags</em></p>
+<p>However, on Uniswap price is not determined by the order book but it changes with the rate of bonding curve so while buying tokens the price is moving up.</p>
 
-<p>Whatever the reason that made you document your code, you will soon find it’s quite tedious and time consuming to write documentation since there is quite a lot of boilerplate text for each function. That’s why we’ve made simple <a href="https://atom.io/"><strong>Atom</strong></a> plugin — <a href="https://atom.io/packages/solidity-comments">solidity-comments</a>. It contains basic functionally for generating all the boilerplate documentation for your Solidity smart contract by pressing the following combination of keys: Ctrl + Alt + G.</p>
+<figure><a href="https://ethresear.ch/t/improving-front-running-resistance-of-x-y-k-market-makers/1281" target="_blank">
+    <img src="../../images/blog/bonding-curve.png"/> </a><figcaption>
+            <h4>Bonding curve formula</h4>
+        </figcaption>
+</figure>
 
-<p>For example, if you have the following code:</p>
 
-<pre><code>    pragma solidity 0.4.24;
+<p>The above graph represents the exchange rate between tokens where the invariant formula is:
+<code>x * y = k</code></p>
 
-    contract SomeContract {
-
-    function test(uint _param1, uint _param2) external {
-            require(_param1 == 1 &amp;&amp; _param2 == 2);
-        }
-    }
+<pre><code>k - constant that does not change
+x - quantity of ETH (or with Uniswap v2 it can be another ERC20 for which liquidity has created)
+y - quantity of ERC20 token such us UMA
 </code></pre>
 
-<p>and you press Ctrl + Alt + G , you will get:</p>
+<p>Anyone buying or selling tokens is effectively shifting the price position on the x * y curve. This means when you go to buy a token which has some current exchange rate, you&rsquo;ll end up making a trade with an average price that&rsquo;s a bit higher than that rate. How big the change is depends if someone made a trade just before you or how many tokens you are buying. For instance, if 1 DAI = 0.00493 ETH and you make a trade of 1 ETH for 202 DAI, making a trade with 100 ETH will not get you 20200 DAI but probably 20170 because the price has moved a lot on the curve.</p>
 
-<pre><code>    pragma solidity 0.4.24;
+<p>What happened with UMA ERC20 tokens is that after 3 days the price stabilized roughly around 1$ which is 4x the initial price. <a href="https://explore.duneanalytics.com/public/dashboards/YCmHZqHfTkO0B1N1C0YZnLSOLtIHBtZfyuXji8iG">Movement of the UMA price</a> had it&rsquo;s peaks as there was a lot of rush to buy the tokens at lower price (before the price moved up the curve).
+ Therefore, a lot of frontrunning transactions with high gas costs got executed before &ldquo;normal&rdquo; orders. This lead to UMA trading at ~5x the initial price only 25 minutes after the launch, making some buyers unhappy as they bought at this higher price. At some point, it was bought for even more than 2$.</p>
 
-    /// [@title](http://twitter.com/title) SomeContract
-    /// [@notice](http://twitter.com/notice)
-    /// [@dev](http://twitter.com/dev)
-    contract SomeContract {
+<p>At the end, the average price of UMA was around 0.5$ and they made a bit more than 2mil dollars worth of ETH.</p>
 
-        /// [@notice](http://twitter.com/notice)
-        /// [@dev](http://twitter.com/dev)
-        /// [@param](http://twitter.com/param) _param1
-        /// [@param](http://twitter.com/param) _param2
-        /// [@return](http://twitter.com/return)
-        function test(uint _param1, uint _param2) external {
-            require(_param1 == 1 &amp;&amp; _param2 == 2);
-        }
-    }
-</code></pre>
+<p>This process could be improved to prevent this kind of speculation. One way could be a dutch action-like mechanism where the process is reversed and the pool is initialized with a part of the token at a high rate (max. price). Then the distributor buybacks from the pool until  the price gets lower and investors start to buying in. Another interesting approach has <a href="https://www.theblockcrypto.com/post/61622/consensys-spin-off-gnosis-launches-decentralized-exchange-with-focus-on-best-price-execution">Gnosis protocol</a> where trades are executed in batches with a single price clearing.</p>
 
-<p>and then you just have to fill in the blanks. Cool, right?</p>
+<p>In the future, we&rsquo;ll probably see more of such token offerings which DEXs facilitate and we congratulate UMA protocol for making this attempt first with their ERC20 token.</p>
 
-<p>We know, not everyone uses Atom, that’s why we extracted logic into separate <a href="https://github.com/NodeFactoryIo/solidity-comments-core"><strong>solidity-comments-core</strong> library</a> and we will soon implement a CLI interface for this. As for other IDEs, we would very much like to port this plugin to other editors especially <a href="https://www.jetbrains.com/webstorm/">Webstorm</a>, so we are currently investigating what is the easiest way to port that JavaScript library into other languages (Java for Webstorm and Python for <a href="https://www.sublimetext.com/">Sublime Text</a>). If you have any suggestion for porting, feel free to contact us!</p>
+<h2 id="what-has-changed-in-the-way-of-token-listing">What has changed in the way of token listing</h2>
 
-<p>Plugin still misses couple of necessary features, where most important one is to update function documentation if params have changed. If you want to contribute or make plugin for some other IDE, checkout our repository:
-<a href="https://github.com/NodeFactoryIo/solidity-comments-core">Solidity comments core</a>.</p>
+<p>Projects that needed to list their tokens have looked now only for a way to enter a centralized exchange i.e. Binance. The biggest benefit of these exchanges is the number of users and volume. Also, nice UIs. Also, a high cost for the listing. On the other hand, we have decentralized exchanges that are inexpensive and free to list but they have a low liquidity which means that it takes more time for a user&rsquo;s order to get filled.</p>
 
-<p>When you need to export your documentation into HTML, you can use documentation generator like <a href="https://github.com/DigixGlobal/doxity">Doxity</a> from Ethereum or <a href="https://github.com/OpenZeppelin/solidity-docgen">docgen</a> from OpenZeppelin.</p>
+<p>With the rise of DEXes and automated market makers (AMM) such as Uniswap we may see now a different token progression. Projects can provide liquidity for their tokens on Uniswap and enable trading instantly. In case the token trades well and can sustain an order book, it should go well on DEXes. Later, when the token is mature enough it could take the last step and probably list on a centralized exchange.</p>
 
-<p>Happy documented coding!</p>
+<p>We can&rsquo;t say that <a href="https://launchpad.binance.com/">Binance Launchpad</a> will be replaced by Uniswap or similar service but it is a fair alternative as <a href="https://dex.watch">trading volumes on DEXes</a> increase.</p>
 
-<p><strong><em>Follow us on <a href="https://medium.com/@nodefactory">Medium</a> or <a href="https://twitter.com/nodefactoryio">Twitter</a> if you want more blockchain development insights like this.</em></strong></p>
-
-<p><em>Node Factory is a blockchain development company committed to developing new technologies and leveraging them to make better applications worldwide. Let us know what we can do for you.</em></p>
+<p><em>Hopefully this article has given you more ideas for your business. If you need a consultation related to the blockchain technology, get in touch with us using the contact form below. NodeFactory is a blockchain R&amp;D company that turns ideas into reliable solutions and we are always looking for new adventures!</em></p>
 
         </div>
     </div><section id="contact" class="wrapper contact">
