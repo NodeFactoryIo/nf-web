@@ -1,5 +1,5 @@
 ---
-title: How decentralized exchanges are paving new ways for tokens offerings
+title: How decentralized exchanges are paving new ways for token offerings
 date: 2020-05-06T00:04:10-00:00
 image: /images/blog/dex-offering.png
 draft: false
