@@ -873,6 +873,8 @@ button.link {
 
 .other-blogs-background img{
 	max-height: 18rem;
+	object-fit: cover;
+	width: 100%;
 }
 
 button.box {
@@ -1364,6 +1366,7 @@ footer p {
 			line-height: 1.5rem;
 			padding: 5px;
 			font-family: Courier;
+			white-space: pre-wrap;
 		}
 
 		pre {
