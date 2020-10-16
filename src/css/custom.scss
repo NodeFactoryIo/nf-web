@@ -681,6 +681,10 @@ header li a{
 	justify-content: center;
 	padding: 1.5rem 0;
 	max-width: none;
+
+	@media only screen and (max-width : 480px) {
+		margin-bottom: 0.5rem;
+	}
 }
 
 
@@ -690,8 +694,7 @@ header li a{
 	margin: 0.5rem 1.5rem;
 
 	@media only screen and (max-width : 480px) {
-		width: 80px;
-		height: 40px;
+		margin: 0.5rem;
 	}
 }
 
