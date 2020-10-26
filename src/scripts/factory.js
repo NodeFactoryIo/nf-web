@@ -6,7 +6,6 @@ var start_animation = lottie.loadAnimation({
   autoplay: true,
   path: "/animations/start_animation.json"
 });
-//TODO set new rendered animation
 start_animation.addEventListener('complete', () => {
     lottie.loadAnimation({
         container: document.getElementById("factoryAnimationLoop"),
