@@ -15,7 +15,7 @@
   position: absolute;
   top: 400px;
   left: -80px;
-  width: 100%;
+  width: calc(100% + 80px);
   .start-animation{
     position: absolute;
   }
@@ -25,10 +25,16 @@
   @media (min-width: 769px) {
     top: -20px;
   }
+  @media (min-width: 856px) {
+    top: -60px;
+  }
   @media (min-width: 1280px) {
-    top: -75px;
+    top: -115px;
   }
   @media (min-width: 1620px) {
     top: -150px;
+  }
+  @media (min-width: 1767px) {
+    top: -200px;
   }
 }
