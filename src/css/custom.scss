@@ -592,9 +592,9 @@ header li a{
 
 	.projectimg{
 		position: relative;
-		width: 763px;
-		height: 579px;
-		margin-left: -300px;
+		width: 534px;
+		height: 405px;
+		margin-left: -250px;
 		overflow: hidden;
 		img{
 			position: absolute;
@@ -605,10 +605,10 @@ header li a{
 			left:0px;
 		}
 		.imac{
-			width: 300px;
-			height: 350px;
+			width: 180px;
+			height: 210px;
 			top: 100px;
-			right: 100px;
+			right: 70px;
 			overflow: hidden;
 		}
 	}
@@ -618,8 +618,23 @@ header li a{
 		align-items: flex-end;
 		display: flex;
 		align-self: flex-end;
-		margin: -2rem 3rem 0 3rem;
+		margin: -1rem 1rem 0 1rem;
 		text-align: right;
+	}
+	@media (min-width: 400px) {
+		.projectimg{
+			width: 763px;
+			height: 579px;
+			margin-left: -300px;
+			.imac{
+				width: 300px;
+				height: 350px;
+				right: 100px;
+			}
+		}
+		.project-content{
+			margin: -2rem 3rem 0 3rem;
+		}
 	}
 	@media (min-width: 600px) {
 		.projectimg{
@@ -664,7 +679,7 @@ header li a{
 			margin-right: -300px;
 			.imac{
 				transform: scaleX(-1);
-				left: 100px;
+				left: 70px;
 			}
 		}
 
@@ -674,6 +689,13 @@ header li a{
 			align-items: flex-start;
 			display: flex;
 			align-self: flex-start;
+		}
+		@media (min-width: 400px) {
+			.projectimg{
+				.imac{
+					left: 100px;
+				}
+			}
 		}
 		@media (min-width: 600px) {
 			.projectimg{
