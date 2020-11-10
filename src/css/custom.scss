@@ -200,7 +200,7 @@ header li a{
 		height: 500px;
 	}
 	@media (min-width: 768px) {
-		
+
 		height: 600px;
 	}
 }
@@ -296,7 +296,7 @@ header li a{
 	}
 	@media (min-width: 870px) {
 		top: -140px;
-		.start-animation{ 
+		.start-animation{
 			height: 700px;
 		}
 		.loop-animation{
@@ -306,8 +306,8 @@ header li a{
 	@media (min-width: 1700px) {
 		top: -140px;
 		width: 60%;
-		
-		.start-animation{ 
+
+		.start-animation{
 			height: 700px;
 		}
 		.loop-animation{
@@ -673,7 +673,7 @@ header li a{
 	&.right-side{
 		display: flex;
 		flex-direction: column-reverse;
-		
+
 		.projectimg{
 			margin-left: 0px;
 			margin-right: -300px;
@@ -724,7 +724,7 @@ header li a{
 			}
 		}
 	}
-	
+
 }
 
 #line h5{
@@ -1546,6 +1546,9 @@ footer p {
 }
 .project-AllianceBlock {
 	background-color: rgb(20, 44, 80);
+}
+.project-Polkadot {
+	background-color: #CB680C;
 }
 .project-Lisinski {
 	h4, h5, p {
