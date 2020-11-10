@@ -200,7 +200,6 @@ header li a{
 		height: 500px;
 	}
 	@media (min-width: 768px) {
-
 		height: 600px;
 	}
 }
@@ -1247,6 +1246,7 @@ footer p {
 .blog-header {
 	padding-top: 7%;
 	padding-bottom: 12%;
+	height: 20px !important;
 
 	@media only screen and (max-width: 480px) {
 		padding-left: 2em;
