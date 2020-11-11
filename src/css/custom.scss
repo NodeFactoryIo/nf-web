@@ -200,7 +200,6 @@ header li a{
 		height: 500px;
 	}
 	@media (min-width: 768px) {
-		
 		height: 600px;
 	}
 }
@@ -257,72 +256,18 @@ header li a{
 	}
 }
 
-.factory-animation{
-	position: absolute;
-	z-index: 1;
-	top: -10px;
-	right: 0px;
-	width: 80%;
-	height: auto;
-	.start-animation{
-	  position: absolute;
-	  z-index: 3;
-	  height: 400px;
-	  right: 0px;
-	}
-	.loop-animation{
-	  position: absolute;
-	  z-index: 2;
-	  height: 400px;
-	  right: 0px;
-	}
-	@media (min-width: 480px) {
-		width: 60%;
-		.start-animation{
-			height: 500px;
-		}
-		.loop-animation{
-			height: 500px;
-		}
-	}
-	@media (min-width: 768px) {
-		width: 50%;
-		.start-animation{
-			height: 600px;
-		}
-		.loop-animation{
-			height: 600px;
-		}
-	}
-	@media (min-width: 870px) {
-		top: -140px;
-		.start-animation{ 
-			height: 700px;
-		}
-		.loop-animation{
-			height: 700px;
-		}
-	}
-	@media (min-width: 1700px) {
-		top: -140px;
-		width: 60%;
-		
-		.start-animation{ 
-			height: 700px;
-		}
-		.loop-animation{
-			height: 700px;
-		}
-	}
-  }
-
 /*Services*/
 
 .services{
 	background-color: #f9f9f9;
 	padding-top: 4rem;
+	margin-bottom: 4rem;
 	text-align: center;
-	margin-bottom: 1rem;
+
+	.services-icon {
+		//width: 100px;
+		height: 135px;
+	}
 }
 
 .service-background {
@@ -426,16 +371,21 @@ header li a{
 	margin: 0rem 0rem 2em 0rem;
 	display: flex;
 	background: #fff;
-  	width: 6rem;
-  	height: 6rem;
+  	width: 7rem;
+  	height: 7rem;
 	align-items: center;
 	border-radius: 50%;
 	justify-content: space-evenly;
 	flex-direction: column;
 	position: relative;
 
-	img {
-		z-index: 1;
+	& > div {
+		width: 9rem;
+		height: 9rem;
+	}
+
+	#launchAnimation {
+		margin-top: 15px;
 	}
 }
 
@@ -455,7 +405,7 @@ header li a{
 		content: '';
 		position: absolute;
 		top: 3rem;
-		right: -8em;
+		right: -9.5em;
 		width: 10em;
 		height: .3em;
 		background: white;
@@ -673,7 +623,7 @@ header li a{
 	&.right-side{
 		display: flex;
 		flex-direction: column-reverse;
-		
+
 		.projectimg{
 			margin-left: 0px;
 			margin-right: -300px;
@@ -724,7 +674,7 @@ header li a{
 			}
 		}
 	}
-	
+
 }
 
 #line h5{
@@ -1302,6 +1252,7 @@ footer p {
 .blog-header {
 	padding-top: 7%;
 	padding-bottom: 12%;
+	height: 20px !important;
 
 	@media only screen and (max-width: 480px) {
 		padding-left: 2em;
