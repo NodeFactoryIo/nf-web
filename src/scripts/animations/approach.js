@@ -28,24 +28,10 @@ const animation4 = lottie.loadAnimation({
   path: "/animations/our_approach/Support_Animation.json"
 });
 
-const observer = new IntersectionObserver(whenInViewport, {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.3
-});
-observer.observe(document.getElementById("approach"));
-
-
-function whenInViewport(entry)
-{
-  if (entry.length > 0 && entry[0].isIntersecting) {
-    // Animate only once
-    observer.disconnect();
-
-    animation1.play();
-    animation2.play();
-    animation3.play();
-    animation4.play();
-  }
-}
+// TODO: Replace this animation with on-hover animation
+// Skipping animation for now
+animation1.goToAndStop(1, true);
+animation2.goToAndStop(1, true);
+animation3.goToAndStop(1, true);
+animation4.goToAndStop(1, true);
 

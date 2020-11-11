@@ -265,7 +265,8 @@ header li a{
 	margin-bottom: 1rem;
 
 	.services-icon {
-		width: 100px;
+		//width: 100px;
+		height: 135px;
 	}
 }
 
@@ -370,16 +371,21 @@ header li a{
 	margin: 0rem 0rem 2em 0rem;
 	display: flex;
 	background: #fff;
-  	width: 6rem;
-  	height: 6rem;
+  	width: 7rem;
+  	height: 7rem;
 	align-items: center;
 	border-radius: 50%;
 	justify-content: space-evenly;
 	flex-direction: column;
 	position: relative;
 
-	img {
-		z-index: 1;
+	& > div {
+		width: 9rem;
+		height: 9rem;
+	}
+
+	#launchAnimation {
+		margin-top: 15px;
 	}
 }
 
@@ -399,7 +405,7 @@ header li a{
 		content: '';
 		position: absolute;
 		top: 3rem;
-		right: -8em;
+		right: -9.5em;
 		width: 10em;
 		height: .3em;
 		background: white;
