@@ -263,11 +263,11 @@ header li a{
 	padding-top: 4rem;
 	margin-bottom: 4rem;
 	text-align: center;
+}
 
-	.services-icon {
-		//width: 100px;
-		height: 135px;
-	}
+.services-icon {
+	//width: 100px;
+	height: 135px;
 }
 
 .service-background {
@@ -1483,10 +1483,8 @@ footer p {
 			justify-content: center;
 
 			img {
-				@media screen and (max-width: 1440px) {
-					max-width: 100%;
-					object-fit: contain;
-				}
+				object-fit: contain;
+				max-width: 100%;
 			}
 		}
 	}
@@ -1497,6 +1495,9 @@ footer p {
 }
 .project-AllianceBlock {
 	background-color: rgb(20, 44, 80);
+}
+.project-FilSnap {
+	background-color: #0090ff;
 }
 .project-Lisinski {
 	h4, h5, p {
@@ -1510,7 +1511,10 @@ footer p {
 	}
 }
 .project-MythX {
-	background-color: #3588C9;
+	background-color: #f2f2f2;
+	h4, h5, p {
+		color: #052437 !important;
+	}
 }
 .project-Lodestar {
 	background-color: #ffff46;
