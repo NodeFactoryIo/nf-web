@@ -1462,11 +1462,11 @@ footer p {
 			font-weight: bold;
 		}
 
-		h4 {
+		h3, h4 {
 			font-weight: bold;
 		}
 
-		h4, h5, p, .keyword-label {
+		h3, h4, h5, p, .keyword-label {
 			color: white;
 		}
 	}
@@ -1500,13 +1500,13 @@ footer p {
 	background-color: #0090ff;
 }
 .project-Lisinski {
-	h4, h5, p {
+	h3, h4, h5, p {
 		color: #052437 !important;
 	}
 }
 .project-Sakura {
 	background-color: #C5C8BE;
-	h4, h5, p {
+	h3, h4, h5, p {
 		color: #052437 !important;
 	}
 }
@@ -1518,7 +1518,7 @@ footer p {
 }
 .project-Lodestar {
 	background-color: #ffff46;
-	h4, h5, p {
+	h3, h4, h5, p {
 		color: #052437 !important;
 	}
 }
