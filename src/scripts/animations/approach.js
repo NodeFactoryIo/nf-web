@@ -30,8 +30,19 @@ const animation4 = lottie.loadAnimation({
 
 // TODO: Replace this animation with on-hover animation
 // Skipping animation for now
-animation1.goToAndStop(1, true);
-animation2.goToAndStop(1, true);
-animation3.goToAndStop(1, true);
-animation4.goToAndStop(1, true);
+
+
+const elements = document.getElementsByClassName("approach-content");
+elements[0].addEventListener("mouseenter", function() {
+  animation1.goToAndPlay(0);
+});
+elements[1].addEventListener("mouseenter", function() {
+  animation2.goToAndPlay(0);
+});
+elements[2].addEventListener("mouseenter", function() {
+  animation3.goToAndPlay(0);
+});
+elements[3].addEventListener("mouseenter", function() {
+  animation4.goToAndPlay(0);
+});
 
