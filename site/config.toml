@@ -1,14 +1,14 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "NodeFactory - Blockchain research and development company"
+title = "NodeFactory - Blockchain r&d company"
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 baseURL = "https://nodefactory.io"
-
+research and development
 relativeURLs = true
 
 [params]
