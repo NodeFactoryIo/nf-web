@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{- partial "list-header" . -}}
+
+<div class="blog-list">
+    {{ $page := .Title }}
+
+    {{ range .Pages.ByDate }}
+        {{- partial "careers-job" . -}}
+    {{ end }}
+</div>
+
+{{- partial "contact" . -}}
+
+{{ end }}

@@ -3,7 +3,7 @@ languageCode = "en-us"
 languageLang = "en"
 title = "NodeFactory - Blockchain research and development company"
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
@@ -13,5 +13,5 @@ relativeURLs = true
 
 [params]
     keywords = ["blockchain", "development", "ethereum", "smart contracts development", "infrastructure"]
-    description = "Node Factory is a blockchain development agency that helps companies evolve using blockchain technologies."
+    description = "Node Factory is a blockchain research and development agency that helps companies evolve using blockchain technologies."
     descriptionShort = "Turning ideas into reliable products."
