@@ -2,12 +2,26 @@
 
 {{- partial "list-header" . -}}
 
-<div class="blog-list">
-    {{ $page := .Title }}
+<div class="careers">
+    <div>
+        <h2>What do you get by working in NodeFactory</h2>
+        <b>Education and innovation</b>
+        <p>Work on R&D projects and help us discover the unknown.</p>
+        <p>Grow better blockchain applications and lead the adoption.</p>
 
-    {{ range .Pages.ByDate }}
-        {{- partial "careers-job" . -}}
-    {{ end }}
+        <b>Freedom and growth</b>
+        <p>Your work will be a part of the open source world.</p>
+        <p>Company that values personal growth and work-life balance.</p>
+    </div>
+
+    <div class="blog-list">
+        {{ $page := .Title }}
+
+        <h4>Open positions</h4>
+        {{ range .Pages.ByDate }}
+            {{- partial "careers-job" . -}}
+        {{ end }}
+    </div>
 </div>
 
 {{- partial "contact" . -}}
