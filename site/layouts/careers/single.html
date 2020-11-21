@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-    <div class="row landing">
+    <div class="row landing padded">
         {{- partial "header" . -}}
 
         <section class="landingcontent blog-header">
@@ -15,7 +15,7 @@
         </section>
     </div>
 
-    <div class="blog-content-wrapper job-details">
+    <div class="blog-content-wrapper">
         <div class="blog-content">
             {{ if .Params.image }}
             <div class="row center">
