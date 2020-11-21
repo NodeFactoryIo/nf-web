@@ -1537,6 +1537,19 @@ footer p {
 }
 
 .careers {
+	padding: 0 5%;
+	margin-top: -8%;
+
+	.info-section {
+		display: flex;
+		z-index: 10;
+
+		img {
+			// TODO: depends on the screen
+			max-height: 500px;
+		}
+	}
+
 	.blog-list h4 {
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -1545,6 +1558,35 @@ footer p {
 	b {
 		font-weight: bold;
 		letter-spacing: 1px;
+		font-size: 1.25rem;
+	}
+
+	.side-image {
+	}
+
+	.about {
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+			max-width: 60%;
+			line-height: 4rem;
+		}
+	}
+
+	.text-block-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		flex: 1;
+
+		.text-block {
+			p {
+				padding-top: 1rem;
+				line-height: 1rem;
+			}
+		}
 	}
 }
 
