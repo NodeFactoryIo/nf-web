@@ -16,15 +16,15 @@
     </div>
 
     <div class="blog-content-wrapper job-details">
-        {{ if .Params.image }}
+        <div class="blog-content">
+            {{ if .Params.image }}
             <div class="row center">
                 <div class="blog-image">
                     <img src="{{ .Params.image }}" alt="{{ .Title }}" />
                 </div>
             </div>
-        {{ end }}
+            {{ end }}
 
-        <div class="blog-content">
             {{ .Content }}
         </div>
     </div>

@@ -1,6 +1,7 @@
 ---
 title: Backend (JavaScript) engineer - m/f
 location: Zagreb, Croatia
+image: /images/careers/job-image-screens.jpg
 ---
 NodeFactory is a **blockchain research and development** company that successfully provides services such as dApp development, infrastructure and tooling.
 We are strong **open source** believers and contributors to the Web3 ecosystem.
