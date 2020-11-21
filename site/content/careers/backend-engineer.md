@@ -9,7 +9,7 @@ Our focus is completely blockchain technology as it is emerging new technology t
 
 
 We are looking for a **backend engineer** who has experience in building things using **JavaScript**.
-One that has a good technical knowledge of JavaScript and product building process but is not afraid to learn how and take part if the development of decentralized products.
+One that has good technical knowledge of JavaScript and product building process but is not afraid to learn how and take part in the development of decentralized products.
 One that is ready to be part of our **small fast-paced team** and have direct influence in the decision-making processes.
 
 **Here is what can you expect:**
@@ -34,8 +34,8 @@ One that is ready to be part of our **small fast-paced team** and have direct in
 * 1+ years of experience in working with JavaScript and Node.js
 * knowledge of modern JavaScript (ES6+) and TypeScript
 * advanced knowledge of Git
-* self-organisation & researching ability
-* to be pro-active member of our team
+* self-organization & researching ability
+* to be a pro-active member of our team
 
 
 If this sounds interesting to you, we are expecting your application! Contact us at info@nodefactory.io.
