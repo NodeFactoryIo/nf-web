@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+    <div class="row landing">
+        {{- partial "header" . -}}
+
+        <section class="landingcontent blog-header">
+            <div class="column">
+                <h4>{{ .Title }}</h4>
+                <p class="date">{{ .Params.Location }}</p>
+            </div>
+
+            <div class="illustrations">
+                <img src="images/net.png" class="illustration-1" alt="network illustration">
+            </div>
+        </section>
+    </div>
+
+    <div class="blog-content-wrapper">
+        {{ if .Params.image }}
+            <div class="row center">
+                <div class="blog-image">
+                    <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+                </div>
+            </div>
+        {{ end }}
+
+        <div class="blog-content">
+            {{ .Content }}
+        </div>
+    </div>
+
+{{ end }}
