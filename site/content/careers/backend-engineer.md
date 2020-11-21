@@ -38,6 +38,4 @@ One that is ready to be part of our **small fast-paced team** and have direct in
 * to be pro-active member of our team
 
 
-
-
-   
+If this sounds interesting to you, we are expecting your application! Contact us at info@nodefactory.io.

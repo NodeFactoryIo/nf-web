@@ -149,6 +149,10 @@ p {
 	position: relative;
     margin-left: 0;
     margin-right: 0;
+
+	&.padded {
+		padding-bottom: 5rem;
+	}
 }
 
 /*Header*/
