@@ -1548,9 +1548,14 @@ footer p {
 		img {
 			// TODO: depends on the screen
 			max-height: 550px;
+
+			@media screen and (min-width: 768px) and (max-width: 1200px) {
+				max-height: 450px;
+			}
+
 		}
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 992px) {
 			flex-direction: column;
 		}
 	}
@@ -1567,16 +1572,21 @@ footer p {
 		flex-direction: column;
 
 		@media screen and (min-width: 768px) {
-			padding: 0 2rem;
+			padding: 1rem 2rem;
 		}
 
 		h2 {
 			line-height: 3rem;
 			padding-bottom: 1rem;
 
-			@media screen and (min-width: 1440px) {
-				max-width: 60%;
+			@media screen and (min-width: 1200px) {
+				max-width: 70%;
 				line-height: 4rem;
+			}
+
+			@media screen and (min-width: 768px) and (max-width: 992px) {
+				font-size: 2rem;
+				line-height: 2.5rem;
 			}
 		}
 	}
