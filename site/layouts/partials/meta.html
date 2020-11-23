@@ -18,6 +18,9 @@
 {{ end }}
 
 {{ $image := "https://www.nodefactory.io/images/NodeFactory_logo.png" }}
+{{ if eq .Title "Careers" }}
+{{ $image = "https://nodefactory.io/images/careers/careers.jpg" }}
+{{ end }}
 {{ if .Params.image }}
 {{ $image = print "https://www.nodefactory.io" .Params.image }}
 {{ end }}
