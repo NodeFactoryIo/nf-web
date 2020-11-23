@@ -6,7 +6,7 @@
         <section class="landingcontent blog-header">
             <div class="column">
                 <h4>{{ .Title }}</h4>
-                <p class="date">{{ .Date.Format "January 2th, 2006." }}</p>
+                <p class="date">{{ .Params.Location }}</p>
             </div>
 
             <div class="illustrations">
@@ -16,19 +16,17 @@
     </div>
 
     <div class="blog-content-wrapper">
-        {{ if .Params.image }}
+        <div class="blog-content">
+            {{ if .Params.image }}
             <div class="row center">
                 <div class="blog-image">
                     <img src="{{ .Params.image }}" alt="{{ .Title }}" />
                 </div>
             </div>
-        {{ end }}
+            {{ end }}
 
-        <div class="blog-content">
             {{ .Content }}
         </div>
     </div>
-
-    {{- partial "contact" . -}}
 
 {{ end }}
