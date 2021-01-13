@@ -9,6 +9,7 @@ keywords:
 - metamask
 - snap
 description:  Building support for Polkadot in MetaMask wallet using MetaMask’s new plugin system - snaps.
+author: Belma Gutlic
 ---
 
 # Bringing wallet interoperability to Ethereum blockchain users

@@ -6,7 +6,12 @@
         <section class="landingcontent blog-header">
             <div class="column">
                 <h4>{{ .Title }}</h4>
-                <p class="date">{{ .Date.Format "January 2th, 2006." }}</p>
+                <p class="date">
+                    {{ if .Params.Author }}
+                        {{ .Params.Author }} -
+                    {{ end }}
+                    {{ .Date.Format "January 2th, 2006." }}
+                </p>
             </div>
 
             <div class="illustrations">
