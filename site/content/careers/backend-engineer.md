@@ -12,30 +12,31 @@ We are looking for a **backend engineer** who has experience in building things 
 One that has good technical knowledge of JavaScript and product building process but is not afraid to learn how and take part in the development of decentralized products.
 One that is ready to be part of our **small fast-paced team** and have direct influence in the decision-making processes.
 
-**Here is what can you expect:**
+**Here is what are we expecting:**
 
-* competitive compensation package with the possibility of a raise after each regular performance evaluation
-* additional benefits for extra work like writing blog posts   
-* flexible working hours
-* dynamic but chill work environment
-* chance to be one of the pioneers in blockchain development 
-* regular team events
-* open communication and transparency
-* free time for extra education, attending local and international conferences and meetups
-* free fruits, snacks & drinks in the office
+* 1+ years of experience in working with JavaScript (Node.js) or Go
+* knowledge of modern JavaScript (ES6+) and TypeScript
+* advanced knowledge of Git
+* self-organization & researching ability
+* to be a pro-active member of our team
 
 **Extra points if you have experience with:**
 
 * Managing CI/CD pipelines
 * Ability to create and deploy containers using Docker and Kubernetes
 
-**Here is what are we expecting:**
+**Here is what can you expect:**
 
-* 1+ years of experience in working with JavaScript and Node.js
-* knowledge of modern JavaScript (ES6+) and TypeScript
-* advanced knowledge of Git
-* self-organization & researching ability
-* to be a pro-active member of our team
-
+* competitive compensation package with the possibility of a raise after each regular performance evaluation
+    * starting gross salary between 13000 - 16000 HRK
+* bonus payments and/or additional benefits for extra work like writing blog posts   
+* flexible working hours
+* dynamic but chill work environment
+* chance to be one of the pioneers in blockchain and crypto development 
+* follow the latest trends on cryptocurrencies and DeFi
+* regular team events
+* open communication and transparency
+* free time for extra education, attending local and international conferences and meetups
+* free fruits, snacks & drinks in the office
 
 If this sounds interesting to you, we are expecting your application! Contact us at info@nodefactory.io.
