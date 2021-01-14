@@ -54,4 +54,15 @@ With the rise of DEXes and automated market makers (AMM) such as Uniswap we may 
 
 We can't say that [Binance Launchpad](https://launchpad.binance.com/) will be replaced by Uniswap or similar service but it is a fair alternative as [trading volumes on DEXes](https://dex.watch) increase. 
 
+
+## Update: How did it play out?
+
+After few launches, it seems that launching token on an AMM isn’t ideal in all scenarios and for all traders.
+This is particularly because of the substantial built-in incentives for **front-running**.
+IDOs give the incentive to be the first buyer as the price can only move upwards.
+That said, it gives tech-savvy investors an edge as they could automate the process.
+
+Fair token issuance should be a priority for all projects and currently only with simple Uniswap liquidity pool it's not possible to reach that.
+However, no matter where the token sale plays out, one thing is sure - Uniswap is still the first place where tokens will list. 
+
 *Hopefully this article has given you more ideas for your business. If you need a consultation related to the blockchain technology, get in touch with us using the contact form below. NodeFactory is a blockchain R&D company that turns ideas into reliable solutions and we are always looking for new adventures!*
