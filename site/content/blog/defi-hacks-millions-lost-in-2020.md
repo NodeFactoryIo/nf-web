@@ -1,5 +1,5 @@
 ---
-title: DeFi Hacks - millions lost in 2020
+title: DeFi hacks - millions lost in 2020
 date: 2021-01-14T19:08:59-00:00
 image: /images/blog/defi.png
 draft: false
@@ -9,7 +9,7 @@ keywords:
 - solidity
 - oracle
 description: An overview on some DeFi hacks that happened in 2020
-author: Nikola Mlianric
+author: Nikola Mlinaric
 ---
 
 # DeFi Hacks - millions lost in 2020
@@ -27,7 +27,7 @@ Being the third-largest DeFi platform and considered as one of the best doesn’
 To borrow cryptocurrency, users have to put up collateral that exceeds the amount they are borrowing. Meaning that the collateral is locked in a smart contract until some ending condition is met. In an alternative scenario, it can happen that the collateral may become undercollateralized and the loan gets liquidated. Blockchain doesn’t know the current prices of each coin on each exchange so it has to get it somewhere. Here *oracles* come into play as they bring off-chain data into blockchain (smart contracts), making a connection between those two worlds.
 In this case, the price of DAI/USDC was pushed on [Coinbase PRO](https://pro.coinbase.com/trade/DAI-USDC) (the only source for Compound’s oracle) by someone or by natural market pressures to $1.3, tricking the blockchain via it’s oracle that the price of DAI stable coin had shot up.
 
-{{<figure src="/images/blog/dai-usdc-spike-on-coinbase-pro" title="Screenshot of DAI-USDC price spike on Coinbase PRO" >}}
+{{<figure src="/images/blog/dai-usdc-spike-on-coinbase-pro.png" title="Screenshot of DAI-USDC price spike on Coinbase PRO" >}}
 
 With that data the blockchain thought that the DAI price was too high and that many of the loans were undercollateralized and liquidated them, resulting in huge losses.
 
