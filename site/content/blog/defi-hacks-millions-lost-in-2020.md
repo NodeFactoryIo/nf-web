@@ -8,7 +8,7 @@ keywords:
 - hack
 - solidity
 - oracle
-description: An overview on some DeFi hacks that happened in 2020
+description: An overview on some Decentralized finance (DeFi) hacks and exploitations that happened during 2020.
 author: Nikola Mlinaric
 ---
 
