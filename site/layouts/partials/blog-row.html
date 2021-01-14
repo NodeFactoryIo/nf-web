@@ -7,7 +7,10 @@
 
             <div class="hidden-xs hidden-sm col-md-6 first-blog-content">
                 <p>{{ .Date.Format "January, 2006." }}</p>
-                <h3>{{ .Title }}</h3>
+                <div>
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Description }}</p>
+                </div>
                 <div class="blog-first-button">
                     <button class="link">READ ARTICLE</button>
                 </div>
