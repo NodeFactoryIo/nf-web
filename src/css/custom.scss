@@ -1492,6 +1492,8 @@ footer p {
 			img {
 				object-fit: contain;
 				max-width: 100%;
+				display: flex;
+				flex: 0;
 			}
 		}
 	}
@@ -1534,6 +1536,9 @@ footer p {
 }
 .project-Hactar {
 	background-color: #242B3D; // 1D2333
+}
+.project-Vedran {
+	background-color: #cc006d;
 }
 
 // Careers
