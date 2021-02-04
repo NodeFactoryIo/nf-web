@@ -706,7 +706,7 @@ header li a{
 
 .partner-logo {
 	width: 181px;
-	height: 45px;
+	height: 50px;
 	margin: 0.5rem 1.5rem;
 
 	@media only screen and (max-width : 480px) {
@@ -732,11 +732,13 @@ header li a{
 	background-position: 0 0;
 }
 
-.partner-logo.huskybytes {
-	background: url(/images/partners/huskybytes.png) 0 -50px no-repeat;
+.partner-logo.web3api {
+	width: 192px;
+	background: url(/images/partners/web3api.png) 0 0 no-repeat;
 }
-.partner-logo.huskybytes:hover {
-	background-position: 0 0;
+.partner-logo.web3api:hover {
+	width: 192px;
+	background-position: 0 -53px;
 }
 
 .partner-logo.novo {
