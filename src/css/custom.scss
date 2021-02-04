@@ -706,7 +706,7 @@ header li a{
 
 .partner-logo {
 	width: 181px;
-	height: 45px;
+	height: 50px;
 	margin: 0.5rem 1.5rem;
 
 	@media only screen and (max-width : 480px) {
@@ -732,27 +732,33 @@ header li a{
 	background-position: 0 0;
 }
 
-.partner-logo.huskybytes {
-	background: url(/images/partners/huskybytes.png) 0 -50px no-repeat;
+.partner-logo.web3api {
+	width: 192px;
+	background: url(/images/partners/web3api.png) 0 0 no-repeat;
 }
-.partner-logo.huskybytes:hover {
-	background-position: 0 0;
+.partner-logo.web3api:hover {
+	width: 192px;
+	background-position: 0 -53px;
 }
 
 .partner-logo.novo {
+	width: 130px;
 	background: url(/images/partners/novo.png) 0 -45px no-repeat;
 }
 .partner-logo.novo:hover {
+	width: 130px;
 	background-position: 0 0;
 }
 
-.partner-logo.mythx {
-	width: 69px;
-	background: url(/images/partners/mythx.png) -79px 0 no-repeat;
+.partner-logo.cryptotask {
+	width: 199px;
+	height: 55px;
+	background: url(/images/partners/cryptotask.png) 0 0 no-repeat;
 }
-.partner-logo.mythx:hover {
-	width: 69px;
-	background-position: 0 0;
+.partner-logo.cryptotask:hover {
+	width: 199px;
+	height: 55px;
+	background-position: 0 -66px;
 }
 /*Testimonials*/
 .testimonials {
@@ -1492,6 +1498,8 @@ footer p {
 			img {
 				object-fit: contain;
 				max-width: 100%;
+				display: flex;
+				flex: 0;
 			}
 		}
 	}
@@ -1534,6 +1542,9 @@ footer p {
 }
 .project-Hactar {
 	background-color: #242B3D; // 1D2333
+}
+.project-Vedran {
+	background-color: #cc006d;
 }
 
 // Careers
