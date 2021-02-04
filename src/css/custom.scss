@@ -740,19 +740,23 @@ header li a{
 }
 
 .partner-logo.novo {
+	width: 130px;
 	background: url(/images/partners/novo.png) 0 -45px no-repeat;
 }
 .partner-logo.novo:hover {
+	width: 130px;
 	background-position: 0 0;
 }
 
-.partner-logo.mythx {
-	width: 69px;
-	background: url(/images/partners/mythx.png) -79px 0 no-repeat;
+.partner-logo.cryptotask {
+	width: 199px;
+	height: 55px;
+	background: url(/images/partners/cryptotask.png) 0 0 no-repeat;
 }
-.partner-logo.mythx:hover {
-	width: 69px;
-	background-position: 0 0;
+.partner-logo.cryptotask:hover {
+	width: 199px;
+	height: 55px;
+	background-position: 0 -66px;
 }
 /*Testimonials*/
 .testimonials {
