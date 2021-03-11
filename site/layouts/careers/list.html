@@ -27,10 +27,15 @@
 
     <div class="positions blog-list">
         {{ $page := .Title }}
+        {{ $now := now.Format "2006-01-02" }}
 
         <h4>Open positions</h4>
-        {{ range .Pages.ByDate }}
+        {{ range where .Pages.ByDate .Params.published "!=" "no" }}
             {{- partial "careers-job" . -}}
+        {{ else }}
+            <div class="row first-blog-background">
+                <h3>Currently there are no open positions but feel free to send an open application!</h3>
+            </div>
         {{ end }}
     </div>
 </div>
