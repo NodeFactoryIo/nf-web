@@ -22,6 +22,7 @@ Additionally, to gain some insights user has to setup Prometheus and host Grafan
 This is where ChainGuardian comes in! It offers ***both statistics and management in one place***. 
 With simple user experience, it gives an abstraction over running CLI commands or executing bash scripts.
 
+{{<figure src="/images/blog/ChainGuardian_Validator.png" title="Part of validator performance statistics" >}}
 
 ChainGuardian offers:
 
@@ -32,6 +33,9 @@ ChainGuardian offers:
 * Beacon node statistics (hardware metrics, response time and errors) and logs
 
 \+ new metrics added each month!
+
+{{<figure src="/images/blog/ChainGuardian_BN_View.png" title="Part of beacon node statistics" >}}
+
 
 Visit [official ChainGuardian website](https://chainguardian.nodefactory.io) for more information and download links.
 
