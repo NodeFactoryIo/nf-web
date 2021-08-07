@@ -235,7 +235,7 @@ header li a{
 	flex-direction: column;
 	flex-wrap: wrap;
 	position: absolute;
-	top: 0;
+	top: 20px;	// because of top-bar overlap
 	right: 0;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -1645,6 +1645,30 @@ footer p {
 			color: #052437;
 			margin-bottom: 0.5rem;
 		}
+	}
+}
+
+.top-bar {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	background-color: #0f0f0f;
+	text-align: center;
+
+	p {
+		padding: 0 0.8rem;
+		color: white;
+		display: inline-block;
+
+		@media screen and (max-width: 768px) {
+			font-size: 0.8rem;
+			line-height: 1.2rem;
+		}
+	}
+
+	a {
+		color: white;
 	}
 }
 
