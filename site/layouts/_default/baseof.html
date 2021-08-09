@@ -2,7 +2,8 @@
 <html lang="en">
   {{- partial "head.html" . -}}
   <body>
-    {{- block "main" . }}{{- end }}
+  {{- partial "top-bar.html" . -}}
+  {{- block "main" . }}{{- end }}
 
     {{- partial "footer.html" . -}}
   </body>
